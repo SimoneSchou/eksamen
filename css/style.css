@@ -1,5 +1,6 @@
-/* Eric Meyer's CSS Reset */
-html, body, div, span, applet, object, iframe,
+/* /* Eric Meyer's CSS Reset */
+/*
+ html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -19,7 +20,10 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+*/ 
 /* HTML5 display-role reset for older browsers */
+
+/*
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -44,6 +48,7 @@ table {
 }
 /* End of Eric Meyer's CSS Reset */
 
+/*
 html {
 	height: 100%;
 }
@@ -66,6 +71,8 @@ body {
 
 /* Header
 -----------------------------------------------------------------------------*/
+
+/*
 .header {
 	height: 150px;
 	background: #FFE680;
@@ -74,6 +81,7 @@ body {
 
 /* Middle
 -----------------------------------------------------------------------------*/
+/*
 .content {
 	padding: 0 0 100px;
 }
@@ -83,6 +91,7 @@ body {
 
 /* Footer
 -----------------------------------------------------------------------------*/
+/*
 .footer {
 	width: 1000px;
 	margin: -100px auto 0;
@@ -90,3 +99,211 @@ body {
 	background: #BFF08E;
 	position: relative;
 }
+*/
+
+
+
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: avenir;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+header {
+    background: #C96974;
+    opacity: 75%;
+    width: 100%;
+    padding: 10px;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    background-color: #C96974;
+    width: 100%;
+    padding: 0px;
+    color: white;
+    font-size: 0.9em;
+
+}
+
+
+#logo-burger {
+    display: flex;
+    align-items: center;
+    margin: 0 .5em;
+}
+
+#logo-burger a {
+    margin-right: auto;
+    width: 100px;
+}
+
+#main-nav {
+    display: flex;
+    margin-right: .5em;
+    list-style: none;
+}
+
+#main-nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    display: block;
+    font-size: 1.5em;
+    line-height: 1.5em;
+
+}
+
+#main-nav a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+.active {
+    color: lightgrey;
+}
+
+
+.hidden {
+    display: none;
+}
+
+/*MEDIA QUERY MOBILE */
+
+@media all and (max-width: 590px) {
+
+    /*HEADER NAV*/
+    header {
+        display: block;
+    }
+
+    #logo-burger {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    
+    #logo-burger label {
+        display: block;
+        font-size: 2em;
+        cursor: pointer;
+        
+    }
+
+
+    #toggle:checked + #main-nav {
+        display: block;
+    }
+
+   
+    #main-nav {
+        display: none;
+    }
+
+    #main-nav a {
+        text-align: center;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+
+   
+
+    .spaceboks {}
+
+
+
+    
+
+
+   
+
+
+}
+
+/*MEDIA QUERY TABLET AND ABOVE*/
+
+@media all and (min-width: 600px) {
+
+    /*HEADER NAV*/
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+     
+    }
+
+
+    #main-nav {
+        justify-content: space-evenly;
+        min-width: 50%;
+        /*sikrer at menupunkterne ikke presses sammen*/
+        margin: 0;
+    }
+
+    #main-nav a {
+        margin: 0 .5em;
+    }
+
+    
+    label {
+        display: none;
+    }
+
+
+    s
+
+   
+   
+
+
+}
+
+/*MEDIA QUERY LAPTOP AND ABOVE*/
+
+@media all and (min-width: 1024px) {
+
+    /*NAVIGATION*/
+    nav {
+        flex-direction: row;
+    }
+
+    
+    #logo-burger {
+        margin-right: auto;
+    }
+
+
+
+ 
+
+
+
+
+
+
+    
+
+    }
+
+
+
+
+
+
+
+
+
+
+
