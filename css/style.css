@@ -242,6 +242,10 @@ hr {
     
 } 
 
+.bannere{
+    width: 100%;
+}
+
 /* Her starter vores første section som kommer under landing siden*/
 .vippefremvisning {
     display: flex;
