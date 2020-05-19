@@ -362,7 +362,7 @@ footer {
     width: 290px;
 }
 
-@media all and (max-width:768px){
+@media all and (max-width:810px){
     nav {
         margin: 0;
     }
@@ -423,10 +423,17 @@ footer {
         position: static;
     }
     .shoppingkurv{
-        display: none;  
+        width: 100%;
     }
+    
     .kontaktlink{
         margin: 0;
+    }
+    #logo{
+    margin: 0;
+    width: 100px;
+    display: 
+        
     }
     
 }
