@@ -220,25 +220,137 @@ nav a{
 /* Footer
 -----------------------------------------------------------------------------*/
 
-.footer {
-	width: 1000px;
-	margin: -100px auto 0;
-	height: 100px;
-	background: #BFF08E;
-	position: relative;
+h2 {
+    text-align: center;
+    color: #d68e97;
 }
-*/
+
+/*Dette er divideren som dukker op flere gange undervejs i vores side*/
+.divider {
+    border-top: 2px solid #d68e97;
+    width: 550px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
 
 
+/* Her starter vores første section som kommer under landing siden*/
+.vippefremvisning {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.vippeudpluk {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+/*Dette er vores produktbox som går igen på flere af vores undersider*/
+.produktbox {
+    background-color: #d68e97;
+    color: white; 
+    text-align: center;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.produktimg {
+    width: 130px;
+    opacity: 0.75;
+}
+
+/*Denne bruges til samtlige knapper hele vejen igennem siden*/
+.knap {
+    padding: 10px;
+    border: 1px;
+    border-color: #d68e97;
+    border-style: solid;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*Her starter vores 2. section. Det er en lille section med et billede og lidt tekst*/
+#kvalibillede {
+    width: 30%;
+    height: 30%;
+}
+
+#kvalitetsvipper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+}
+
+#kvalitext {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+/*_________________________________________________*/
+
+
+
+/*Footer*/
 footer {
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
     bottom: 0;
-    background-color: #C96974;
+    background-color: #d68e97;
     width: 100%;
     padding: 0px;
     color: white;
     font-size: 0.9em;
+}
 
+#footer-links, #footer-some, #footer-kundecenter, #footer-kontakt {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.someimg {
+    width: 15%;
+}
+/*Slut på footer_____________________________*/
+
+/*Kode for 'Om os'-siden*/
+.omimg {
+    width: 50%;
+    height: auto;
+}
+
+#om1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 0.9em;
+    width: 100%;
+    
+}
+
+
+#om2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 0.9em;
+    width: 100%;
+}
+
+.omp {
+    width: 290px;
 }
 
 @media all and (max-width:768px){
