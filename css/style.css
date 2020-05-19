@@ -76,7 +76,7 @@ header{
     background: #d68e97;
     line-height: 3px;
     color: #fff;
-    margin: 0;
+    margin: ;
     padding: 10px;
     word-break: break-word !important;
 }
@@ -121,7 +121,7 @@ nav ul ul li{
 
 nav ul ul ul li{
     position: relative;
-    top: -60px;
+    top: -61px;
     left: 105px;
 }
 
@@ -270,8 +270,9 @@ footer {
     }
     nav ul li{
         display: block;
-        width: 90%;
+        width: 100%;
         text-align: center;
+        margin: 0;
     }
     nav ul ul .toggle,
     nav ul ul a{
@@ -279,13 +280,9 @@ footer {
     }
     nav ul ul ul a{
         padding: 0 80px;
-        background-color: aliceblue;
+        background-color: mistyrose;
     }
     
-    nav ul li ul li .toggle,
-    nav ul ul a{
-        background-color: beige;
-    }
     
     nav ul ul{
         float: none;
@@ -303,6 +300,12 @@ footer {
     }
     nav ul ul ul li{
         position: static;
+    }
+    .shoppingkurv{
+        display: none;  
+    }
+    .kontaktlink{
+        margin: 0;
     }
     
 }
