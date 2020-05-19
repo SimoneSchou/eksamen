@@ -225,17 +225,22 @@ h2 {
     color: #d68e97;
 }
 
-/*Dette er divideren som dukker op flere gange undervejs i vores side*/
-.divider {
-    border-top: 2px solid #d68e97;
-    width: 550px;
-    margin-top: 45px;
-    margin-bottom: 45px;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-}
+/*Dette er vores break-streg som dukker op flere gange undervejs i vores side*/
 
+
+
+hr {
+   
+    display: block; 
+    height: 1.5px;
+    border: 0; 
+    border-top: 1px solid #d68e97;
+    margin: auto; 
+    padding: 0;
+    text-align: center;
+    width: 80%;
+    
+} 
 
 /* Her starter vores første section som kommer under landing siden*/
 .vippefremvisning {
