@@ -197,7 +197,15 @@ nav a{
     line-height: 30px;
 }
 
+.kontaktlink{
+    float: right;
+    margin-right: 40px
+}
 
+.shoppingkurv {
+    float: right;
+    margin: 0;
+}
 
 /* Middle
 -----------------------------------------------------------------------------*/
@@ -252,7 +260,7 @@ footer {
         background-color: #d68e97;
         padding: 0 20px;
         font-size: 15px;
-        line-height: 60px;
+        line-height: 30px;
         text-decoration: none;
         border: none;
     }
@@ -262,11 +270,12 @@ footer {
     }
     nav ul li{
         display: block;
-        width: 100%;
+        width: 90%;
+        text-align: center;
     }
     nav ul ul .toggle,
     nav ul ul a{
-        padding: 0 40px;
+        padding: 0 30px;
     }
     nav ul ul ul a{
         padding: 0 80px;
@@ -281,8 +290,9 @@ footer {
     nav ul ul{
         float: none;
         position: static;
-        color:red;
+        color:white;
     }
+    
      nav ul ul li:hover>ul,
     nav ul li:hover>ul{
         display: none;
