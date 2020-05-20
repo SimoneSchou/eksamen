@@ -88,6 +88,20 @@ a{
 display: none;
 }
 
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s;
+}
+
+.cool-link:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
 #logo{
     display: block;
     padding: 0px;
@@ -107,7 +121,7 @@ nav ul li ul li:hover{
 nav ul ul{
     display: none;
     position: absolute;
-    top: 40px;
+    top: 50px;
 }
 
 nav ul ul li{
@@ -121,7 +135,7 @@ nav ul ul li{
 
 nav ul ul ul li{
     position: relative;
-    top: -61px;
+    top: -71px;
     left: 105px;
 }
 
@@ -362,6 +376,34 @@ footer {
     width: 290px;
 }
 
+/*-- KONTAKTSIDE---------------------------*/
+
+.kontakt-overskrift {
+    text-align: center;
+    color: #d68e97;
+    font-size: 30px;
+    margin: 30px;
+    font-family:----------------;
+    line-height: 30px;
+}
+
+.p-brodtekst-kontakt{
+margin: 15px;
+line-height: 20px;
+text-align: center;   
+}
+
+.container-kontakt {
+    display: flex;flex-wrap;
+    margin: 10px;
+    text-align: center;
+}
+
+.h2-kontakt{
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+}
 
 /*-- burgerbar i mobil---------------------------*/
 @media all and (max-width:810px){
