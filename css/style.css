@@ -88,6 +88,9 @@ a{
 display: none;
 }
 
+
+/*https://www.youtube.com/watch?v=IYTBAQRBsw0*/
+
 .cool-link::after {
     content: '';
     display: block;
@@ -112,7 +115,7 @@ display: none;
     
 }
 
-/*farve på hover navigationsmenuen*/
+/*farve på hover navigationsmenuen */
 nav ul li ul li:hover{
     background-color: bisque;
 }
@@ -234,8 +237,15 @@ nav a{
 /* Footer
 -----------------------------------------------------------------------------*/
 
-h2 {
+.h2overskrift-vipper {
     text-align: center;
+    color: #d68e97;
+    font-size: 20px;
+    line-height: 90px;
+}
+
+h2{
+     text-align: center;
     color: #d68e97;
 }
 
@@ -244,7 +254,6 @@ h2 {
 
 
 hr {
-   
     display: block; 
     height: 1.5px;
     border: 0; 
@@ -275,12 +284,13 @@ hr {
 
 
 /*Dette er vores produktbox som går igen på flere af vores undersider*/
-.produktbox {
+.vippebillede1, .vippebillede2, .vippebillede3, .vippebillede4 {
     background-color: #d68e97;
     color: white; 
     text-align: center;
     margin-right: 15px;
-    margin-left: 15px;
+    margin-left: 25px;
+    padding: 5px;
 }
 
 .produktimg {
@@ -305,12 +315,21 @@ hr {
     height: 30%;
 }
 
+.flexcontainer-forside {
+   display: flex;
+    justify-content: center;
+    font-size: 0.9em;
+    width: 100%;
+    
+}
+
 #kvalitetsvipper {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     font-size: 0.9em;
+    line-height: 20px;
 }
 
 #kvalitext {
@@ -393,17 +412,6 @@ line-height: 20px;
 text-align: center;   
 }
 
-.container-kontakt {
-    display: flex;flex-wrap;
-    margin: 10px;
-    text-align: center;
-}
-
-.h2-kontakt{
-    margin: 5px;
-    padding: 10px;
-    text-align: center;
-}
 
 /*-- burgerbar i mobil---------------------------*/
 @media all and (max-width:810px){
