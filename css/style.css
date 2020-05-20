@@ -362,6 +362,8 @@ footer {
     width: 290px;
 }
 
+
+/*-- burgerbar i mobil---------------------------*/
 @media all and (max-width:810px){
     nav {
         margin: 0;
