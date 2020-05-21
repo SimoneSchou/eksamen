@@ -8,7 +8,6 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link href='https://www.dafont.com/made-saonara.font' rel="stylesheet">
-    
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -70,10 +69,6 @@
     </header>
 
     <main>
-       
-        <div class="bannere">
-            <img src="images/forsidebanner.png" alt="forside banner" width="100%">
-        </div>
     
          <div class="kontaktoverskrifter">
             <h2> Kontakt os</h2>
@@ -87,24 +82,32 @@ venter på at kunne besvare dit spørgsmål. <br>
 meget gerne høre fra dig.</p>
     </main>
     
+    
+    <!------ Her er kontaktformen der henviser til javascript------------->
+    
+    <div class="kontakt-container">
     <form>
+       <label>
+            Fulde navn
+            <input type="fullname" class="fuldenavn" placeholder="Dit fuldenavn...">
+        </label>
         <label>
             E-mail
-            <input type="email" class="email">
+            <input type="email" class="email" placeholder="Skriv din mail her...">
         </label>
         <label>
-            Subject
-            <input type="'text" class="subject">
+            Emne
+            <input type="'text" class="subject" placeholder="Hvad er problemet...">
         </label>
         <label>
-            Message
-            <textarea></textarea>
+            Grund
+            <textarea placeholder="Skriv noget..."></textarea>
             <label>
-                <button type="submit">Send</button>
+                <input type="submit" value="Submit">
             </label>
         </label>
     </form>
-
+</div>
    
     <footer>
         <div id="footer-kontakt">
@@ -137,6 +140,7 @@ meget gerne høre fra dig.</p>
                 </div>
     </footer>
 
+<script src="js/javascript.js"></script>
 </body>
 
 </html>

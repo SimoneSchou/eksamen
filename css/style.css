@@ -693,6 +693,7 @@ footer {
     font-size: 15px;
     margin: 10px;
     text-align: center;
+    line-height: 22px;
 }
 
 .hrkontakt{
@@ -700,8 +701,52 @@ footer {
     border-top: 1.2px solid #d68e97;
     text-align: center;
     width: 80%;
-    padding: 0px;
-    
+    padding: 0px;   
+}
+
+
+/*kontaktform*/
+
+.fuldenavn, .email, .subject {
+    width: 300px;
+    margin-bottom: 16px;
+}
+
+label, input, textarea {
+    display: block;
+    line-height: 30px;
+}
+
+.kontakt-container {
+    border-radius: 1px;
+  background-color: whitesmoke;
+  padding: 30px;
+    margin: 10px;
+    max-width: 400px;  
+}
+
+input[type=submit]:hover {
+  background-color: mistyrose;
+}
+
+input[type=submit] {
+  background-color: #d68e97;
+  color: white;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
 /*----- kurv begynder her-----*/
