@@ -463,12 +463,14 @@
 
  #forsidecontentvipper {
      display: block;
-     width: auto;
+     width: 93%;
+     margin: auto;
      text-align: center;
      justify-content: center;
      display: flex;
      flex-wrap: wrap;
      flex-direction: row;
+ 
 
 
  }
@@ -767,7 +769,6 @@
 
  .hrkontakt {
      display: block;
-
      border-top: 1.2px solid #d68e97;
      text-align: center;
      width: 80%;
