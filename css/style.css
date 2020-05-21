@@ -111,39 +111,6 @@ footer {
     text-align: center;
 }
 
-.someimg {
-    width: 15%;
-}
-
-
-/* ---------footer begynder til mobile---------*/
-
-
-/*-------- footer Media Queries------- */
-
-@media all and (max-width : 768px) {
-    footer {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    #footer-links,
-    #footer-some,
-    #footer-kundecenter,
-    #footer-kontakt {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .someimg {
-        width: 30px;
-        padding-bottom: 10px;
-    }
-}
-
-
 
 /* -----navbar begynder til desktop----- */
 
@@ -434,11 +401,11 @@ hr {
     display: block;
     height: 30px;
     border: 0;
-    border-top: 1.2px solid #d68e97;
+    border-top: 1.6px solid #d68e97;
     margin: 40px auto;
     padding: 0;
     text-align: center;
-    width: 80%;
+    width: 60%;
 
 
 }
@@ -669,13 +636,92 @@ footer {
 
 
 /*----- om os begynder her-----*/
-
-.omosoverskrifter {
+#omosoverskrift {
     text-align: center;
-    color: #d68e97;
+    padding: 50px;
+}
+
+.omkarma {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-bottom: 15px;
+}
+
+.omimg {
+    width: 40%;
+    height: auto;
+}
+
+#om1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    font-size: 0.9em;
+    width: 100%;
 }
 
 
+#om2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    font-size: 0.9em;
+    width: 100%;
+}
+
+.omp1 {
+    width: 50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+.omp2 {
+    width: 50%;
+    padding-bottom: 20px;
+    text-align: right;
+    
+}
+
+/*-------Mobil version til 'Om Os' begynder her---------*/
+
+/*-------- Media Queries------- */
+
+@media all and (max-width : 768px) {
+    
+    .omkarma {
+        margin: 0;
+    }
+    
+    .omimg {
+        width: 80%;
+    }
+    
+ #om1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    width: 100%;
+    
+}
+
+
+#om2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    width: 100%;
+}   
+    
+    .omp2 {
+    text-align: left;
+    
+}
+}
 
 /*----- produkt/vippeside begynder her-----*/
 
