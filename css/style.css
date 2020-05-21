@@ -681,4 +681,9 @@ p {
     text-align: center;
 }
 
-> > > > > > > 8d49550f719f4572a1541170ab3ce971b4433fc3
+
+
+/*----- kurv begynder her-----*/
+.kurvoverskrifter {
+    text-align: center;
+    color: #d68e97;
