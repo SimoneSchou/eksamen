@@ -1,33 +1,171 @@
-@import url(https://www.dafont.com/made-saonara.font);
+ @font-face { font-family: MADE SAONARA; src: url('MADE_SAONARA_PERSONAL_USE.otf'); }
+
+@font-face { font-family: Quicksand; src: url('Quicksand_Light.otf'); }
+
+/*--------Body begynder her---------*/
+
+/*--------Body begynder her---------*/
 
 body {
-    background: white;
     width: auto;
     height: auto;
     color: black;
     margin: 0;
     padding: 0;
-    word-wrap: break-word !important;
-
+    word-wrap: break-word;
+    color: #D68E97;
 }
 
+/*--------Header begynder her---------*/
+
 header {
+
     background-color: #d68e97;
     width: auto;
     height: auto;
-    color: white;
+    color: #FFFFFF;
     display: block;
     position: relative;
+<<<<<<< HEAD
+    font-family: MADE SAONARA;
 
-
+=======
+>>>>>>> 4138aa4b1cc5a1bf1fdd8a95023439d27af68fd3
 }
 
 
 
+/*--------footer begynder her---------*/
 footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    bottom: 0;
     background-color: #d68e97;
+    width: 100%;
+    padding: 0px;
+    padding-bottom: 10px;
     color: white;
+    font-size: 0.9em;
 }
+
+#footer-links,
+#footer-some,
+#footer-kundecenter,
+#footer-kontakt {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+.someimg {
+    width: 15%;
+}
+
+
+/* ---------footer begynder til mobile---------*/
+
+
+/*-------- footer Media Queries------- */
+
+@media all and (max-width : 768px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #footer-links,
+    #footer-some,
+    #footer-kundecenter,
+    #footer-kontakt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .someimg {
+        width: 30px;
+        padding-bottom: 10px;
+    }
+}
+
+
+/*-----guide begynder her-----*/
+
+.guideoverskrifter {
+    text-align: center;
+    color: #d68e97;
+}
+
+
+
+
+
+
+
+
+
+/*----- om os begynder her-----*/
+
+.omosoverskrifter {
+    text-align: center;
+    color: #d68e97;
+<<<<<<< HEAD
+}
+
+
+
+
+
+
+/*----- produkt/vippeside begynder her-----*/
+
+.vipperoverskrifter {
+    text-align: center;
+    color: #d68e97;
+}
+
+
+/*----- kontakt begynder her-----*/
+
+.kontaktoverskrifter {
+    text-align: center;
+    color: #d68e97;
+=======
+>>>>>>> 4138aa4b1cc5a1bf1fdd8a95023439d27af68fd3
+}
+
+
+
+
+
+
+<<<<<<< HEAD
+=======
+/*----- produkt/vippeside begynder her-----*/
+
+.vipperoverskrifter {
+    text-align: center;
+    color: #d68e97;
+}
+
+
+/*----- kontakt begynder her-----*/
+
+.kontaktoverskrifter {
+    text-align: center;
+    color: #d68e97;
+}
+
+
+
+
+
+
+>>>>>>> 4138aa4b1cc5a1bf1fdd8a95023439d27af68fd3
+
 
 a {
     color: white;
@@ -35,6 +173,7 @@ a {
 
 p {
     margin: 0;
+    font-family: quicksand;
 }
 
 /* -----navbar begynder til desktop----- */
@@ -208,8 +347,11 @@ li > a:only-child:after {
     content: '';
 }
 
+<<<<<<< HEAD
+/* ---------navbarbar/burger begynder til mobile-------*/
+=======
 /* ---------navbarbar/burger begynder til mobile---------*/
-
+>>>>>>> 4138aa4b1cc5a1bf1fdd8a95023439d27af68fd3
 
 /*-------- Media Queries------- */
 
@@ -345,27 +487,26 @@ hr {
 }
 }
 
-/*----- styling af h2-----*/
+/*----- styling af h2 + h3-----*/
 
 h2 {
     color: #d68e97;
-    font-family: 'Made-Saonara';
+    font-family: MADE SAONARA;
 }
 
 
-
+h3 {
+    color: white;
+    font-family: MADE SAONARA;
+}
 
 /*-----Forside content begynder her -----*/
 
-#spaceforside{
- height: 10%;
-    padding: 10%;
-    margin: 10%;
-}
 .forsideoverskrifter {
     text-align: center;
     color: #d68e97;
     margin: auto;
+
 }
 
 #forsidecontentvipper {
@@ -394,7 +535,7 @@ h2 {
 }
 
 .vipper2forside {
-     width: auto;
+    width: auto;
     padding: auto;
     margin: auto;
     display: flex;
@@ -486,6 +627,8 @@ produktbox {
 }
 
 
+<<<<<<< HEAD=======
+
 /*--------footer begynder her---------*/
 footer {
     display: flex;
@@ -501,7 +644,10 @@ footer {
     font-size: 0.9em;
 }
 
-#footer-links, #footer-some, #footer-kundecenter, #footer-kontakt {
+#footer-links,
+#footer-some,
+#footer-kundecenter,
+#footer-kontakt {
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -522,16 +668,19 @@ footer {
         flex-direction: column;
         text-align: center;
     }
-    
-    #footer-links, #footer-some, #footer-kundecenter, #footer-kontakt {
+
+    #footer-links,
+    #footer-some,
+    #footer-kundecenter,
+    #footer-kontakt {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
+
     .someimg {
         width: 30px;
-        padding-bottom: 10px;   
+        padding-bottom: 10px;
     }
 }
 
@@ -544,22 +693,12 @@ footer {
 }
 
 
-
-
-
-
-
-
-
 /*----- om os begynder her-----*/
 
 .omosoverskrifter {
     text-align: center;
     color: #d68e97;
 }
-
-
-
 
 
 
@@ -577,3 +716,16 @@ footer {
     text-align: center;
     color: #d68e97;
 }
+
+p {
+    font-size: 15px;
+    margin: 10px;
+    text-align: center;
+}
+
+
+
+/*----- kurv begynder her-----*/
+.kurvoverskrifter {
+    text-align: center;
+    color: #d68e97;
