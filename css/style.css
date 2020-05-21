@@ -28,6 +28,7 @@
  p {
      margin: 0;
      font-family: quicksand;
+     color: black;
  }
 
  /*--------Header begynder her---------*/
@@ -132,6 +133,7 @@
  #logo {
      display: block;
      float: left;
+  
 
  }
 
@@ -242,6 +244,7 @@
 
  nav a:hover {
      background-color: mistyrose;
+     border: solid 1px bisque;
 
 
  }
