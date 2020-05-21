@@ -691,7 +691,7 @@ hr {
 #kvalitext {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    text-align: left; 
     margin-right: 30%;
     padding-left: 10px;
     padding-bottom: 10%;
