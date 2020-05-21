@@ -2,9 +2,8 @@
 
 body {
     background: white;
-    width: 100%;
-    font-size: 22px;
-    line-height: 32px;
+    width: auto;
+    height: auto;
     color: black;
     margin: 0;
     padding: 0;
@@ -17,6 +16,10 @@ header {
     width: auto;
     height: auto;
     color: white;
+    display: block;
+    position: relative;
+
+
 }
 
 
@@ -39,12 +42,13 @@ p {
 .toggle,
 [id^=drop] {
     display: none;
+
 }
 
 nav {
     margin: 0;
     padding: 0;
-    background-color: #d68e97;
+    background-color: none;
 
 }
 
@@ -58,31 +62,48 @@ nav {
 
 /* -----kurv i navbar----- */
 #kurv {
-    display:block;
+    display: block;
     float: right;
     position: relative;
     margin-top: 15px;
 
 }
 
+.toggle,
+[id^=drop] {
+    display: none;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    background-color: #d68e97;
+
+}
+
+#logo {
+    position: relative;
+    display: block;
+    float: left;
+
+}
+
+
 #main-toggle {
+    cursor: pointer;
     float: right;
     padding: 28px 20px;
     position: relative;
     user-select: none;
 
-
 }
 
 .nav-icon {
-    background-color: white;
-    color: white;
+    background: white;
     display: block;
-    height: 4px;
+    height: 2px;
     position: relative;
-    width: 25px;
-
-
+    width: 18px;
 }
 
 .nav-icon:before,
@@ -93,21 +114,19 @@ nav {
     height: 100%;
     position: absolute;
     width: 100%;
-    ;
 }
 
 .nav-icon:before {
-    top: 10px;
+    top: 5px;
 }
 
 .nav-icon:after {
-    top: -10px;
+    top: -5px;
 }
 
 nav:after {
     content: "";
-    display:table;
-    background-color: none;
+    display: table;
     clear: both;
 }
 
@@ -124,36 +143,46 @@ nav ul li {
     display: inline-block;
     float: left;
     background-color: #d68e97;
+
+
 }
 
 nav a {
     display: block;
     padding: 0 20px;
-    color: white;
+    color: #FFF;
     font-size: 20px;
     line-height: 60px;
     text-decoration: none;
+
+
 }
 
 nav ul li ul li:hover {
     background: #d68e97;
-     border: solid 1px;
+    border: solid 1px bisque;
+
+
 }
 
 nav a:hover {
-    background-color: bisque;
-    
+    background-color: mistyrose;
+
+
 }
 
 nav ul ul {
     display: none;
-    position:sticky;
+    position: sticky;
     top: 60px;
-   
+
+
 }
 
 nav ul li:hover > ul {
     display: inherit;
+
+
 }
 
 nav ul ul li {
@@ -161,12 +190,14 @@ nav ul ul li {
     float: none;
     display: list-item;
     position: relative;
+
 }
 
 nav ul ul ul li {
     position: relative;
     top: -60px;
     left: 170px;
+
 }
 
 li > a:after {
@@ -213,7 +244,7 @@ li > a:only-child:after {
 
     .toggle:hover {
         background-color: #d68e97;
-        text-align: center;
+
 
     }
 
@@ -286,20 +317,25 @@ li > a:only-child:after {
 
 hr {
     display: block;
-    height: 2px;
+    height: 30px;
     border: 0;
-    border-top: 1px solid #d68e97;
-    margin: auto;
+    border-top: 1.2px solid #d68e97;
+    margin: 40px auto;
     padding: 0;
     text-align: center;
     width: 80%;
+
+
+
 }
 
 /*----- Vores instafeed-----*/
 #instafeed {
-   
+
     text-align: center;
     justify-content: center;
+    width: 80%;
+    margin: auto;
 
 }
 
@@ -320,9 +356,16 @@ h2 {
 
 
 /*-----Forside content begynder her -----*/
+
+#spaceforside{
+ height: 10%;
+    padding: 10%;
+    margin: 10%;
+}
 .forsideoverskrifter {
     text-align: center;
     color: #d68e97;
+    margin: auto;
 }
 
 #forsidecontentvipper {
@@ -334,27 +377,32 @@ h2 {
     flex-wrap: wrap;
     flex-direction: row;
 
+
 }
 
 
 .vipper1forside {
     width: auto;
-    padding: 10px;
-    margin: 10px;
+    padding: auto;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-content: center;
     text-align: center;
+    background-color: mistyrose;
+    border: solid 1px #d68e97;
 }
 
 .vipper2forside {
-    width: auto;
-    padding: 10px;
-    margin: 10px;
+     width: auto;
+    padding: auto;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-content: center;
     text-align: center;
+    background-color: mistyrose;
+    border: solid 1px #d68e97;
 }
 
 
@@ -409,7 +457,33 @@ produktbox {
 }
 
 
-#forsidecontentkvalitet {}
+#forsidecontentkvalitet {
+
+    display: block;
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+#kvalitetsvipperboks {
+    width: 80%;
+    margin-bottom: 30px;
+    background-color: mistyrose;
+    border-style: solid;
+    border-width: 1px;
+    border-color: mistyrose;
+
+}
+
+#kvalibillede {
+    display: inline-block;
+    margin: auto;
+    width: 100%;
+}
 
 
 /*--------footer begynder her---------*/
@@ -503,4 +577,3 @@ footer {
     text-align: center;
     color: #d68e97;
 }
-
