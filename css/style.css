@@ -13,10 +13,10 @@ body {
 
 }
 
-
 /*--------Header begynder her---------*/
 
 header {
+
     background-color: #d68e97;
     width: auto;
     height: auto;
@@ -42,7 +42,10 @@ footer {
     font-size: 0.9em;
 }
 
-#footer-links, #footer-some, #footer-kundecenter, #footer-kontakt {
+#footer-links,
+#footer-some,
+#footer-kundecenter,
+#footer-kontakt {
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -63,16 +66,19 @@ footer {
         flex-direction: column;
         text-align: center;
     }
-    
-    #footer-links, #footer-some, #footer-kundecenter, #footer-kontakt {
+
+    #footer-links,
+    #footer-some,
+    #footer-kundecenter,
+    #footer-kontakt {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
+
     .someimg {
         width: 30px;
-        padding-bottom: 10px;   
+        padding-bottom: 10px;
     }
 }
 
@@ -457,7 +463,7 @@ h2 {
     text-align: center;
     color: #d68e97;
     margin: auto;
-    
+
 }
 
 #forsidecontentvipper {
@@ -486,7 +492,7 @@ h2 {
 }
 
 .vipper2forside {
-     width: auto;
+    width: auto;
     padding: auto;
     margin: auto;
     display: flex;
@@ -578,8 +584,8 @@ produktbox {
 }
 
 
-<<<<<<< HEAD
-=======
+<<<<<<< HEAD=======
+
 /*--------footer begynder her---------*/
 footer {
     display: flex;
@@ -595,7 +601,10 @@ footer {
     font-size: 0.9em;
 }
 
-#footer-links, #footer-some, #footer-kundecenter, #footer-kontakt {
+#footer-links,
+#footer-some,
+#footer-kundecenter,
+#footer-kontakt {
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -616,16 +625,19 @@ footer {
         flex-direction: column;
         text-align: center;
     }
-    
-    #footer-links, #footer-some, #footer-kundecenter, #footer-kontakt {
+
+    #footer-links,
+    #footer-some,
+    #footer-kundecenter,
+    #footer-kontakt {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
+
     .someimg {
         width: 30px;
-        padding-bottom: 10px;   
+        padding-bottom: 10px;
     }
 }
 
@@ -667,4 +679,5 @@ p {
     margin: 10px;
     text-align: center;
 }
->>>>>>> 8d49550f719f4572a1541170ab3ce971b4433fc3
+
+> > > > > > > 8d49550f719f4572a1541170ab3ce971b4433fc3
