@@ -32,9 +32,9 @@ footer {
     padding: 0px;
     color: white;
     font-size: 0.9em;
-
 }
 
+<<<<<<< HEAD
 
 
 main{
@@ -44,6 +44,8 @@ main{
 
 
   
+=======
+>>>>>>> 443cdb9ebb1fc3f526628ca7693cb579ff2854f0
 
 a{
    color: #fff;
@@ -51,6 +53,9 @@ a{
 .toggle, [id] {
 display: none;
 }
+
+
+/*https://www.youtube.com/watch?v=IYTBAQRBsw0*/
 
 .cool-link::after {
     content: '';
@@ -76,13 +81,18 @@ display: none;
     
 }
 
+/*farve på hover navigationsmenuen */
  #kurv{
     display: block;
     padding: 0px;
     float: right;
     line-height: 10px;
+<<<<<<< HEAD
     margin-top: 15px;
    
+=======
+    margin-top: 15px;  
+>>>>>>> 443cdb9ebb1fc3f526628ca7693cb579ff2854f0
     
 }
 
@@ -188,7 +198,7 @@ nav a{
 }
 
 /*-- burgerbar i mobil---------------------------*/
-@media all and (max-width:810px){
+ @media all and (max-width:810px){
     nav {
         margin: 0;
     }
@@ -256,13 +266,8 @@ nav a{
     
     #logo{
     margin: 0;
-    width: 100px;
-    display: ;
-        
-    }
-    
-    
-    
+    width: 100px;   
+    }     
 }
 
 kontaktlink{
@@ -271,18 +276,19 @@ kontaktlink{
 }
 
 
-
 /* content!!
 -----------------------------------------------------------------------------*/
 
 
-
-
-
-
-
-h2 {
+.h2overskrift-vipper {
     text-align: center;
+    color: #d68e97;
+    font-size: 20px;
+    line-height: 90px;
+}
+
+h2{
+     text-align: center;
     color: #d68e97;
 }
 
@@ -291,7 +297,6 @@ h2 {
 
 
 hr {
-   
     display: block; 
     height: 1.5px;
     border: 0; 
@@ -327,13 +332,18 @@ hr {
 
 
 /*Dette er vores produktbox som går igen på flere af vores undersider*/
-.produktbox {
+.vippebillede1, .vippebillede2, .vippebillede3, .vippebillede4 {
     background-color: #d68e97;
     color: white; 
     text-align: center;
+<<<<<<< HEAD
     margin-right: auto;
     margin-left: auto;
 
+=======
+    padding: 5px;
+    margin: 5px;
+>>>>>>> 443cdb9ebb1fc3f526628ca7693cb579ff2854f0
 }
 
 .produktimg {
@@ -358,12 +368,19 @@ hr {
     height: 30%;
 }
 
+.flexcontainer-forside {
+   display: flex;
+    justify-content: center;
+    font-size: 0.9em; 
+}
+
 #kvalitetsvipper {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     font-size: 0.9em;
+    line-height: 20px;
 }
 
 #kvalitext {
@@ -372,7 +389,6 @@ hr {
     justify-content: flex-start;
 }
 /*_________________________________________________*/
-
 
 
 
@@ -391,8 +407,7 @@ hr {
     justify-content: space-between;
     align-items: flex-end;
     font-size: 0.9em;
-    width: 100%;
-    
+    width: 100%;  
 }
 
 
@@ -425,25 +440,5 @@ margin: 15px;
 line-height: 20px;
 text-align: center;   
 }
-
-.container-kontakt {
-    display: flex;flex-wrap;
-    margin: 10px;
-    text-align: center;
-}
-
-.h2-kontakt{
-    margin: 5px;
-    padding: 10px;
-    text-align: center;
-}
-
-
-
-
-
-
-
-
 
 
