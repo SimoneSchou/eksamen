@@ -20,6 +20,7 @@ header {
 }
 
 
+
 footer {
     background-color: #d68e97;
     color: white;
@@ -57,17 +58,14 @@ nav {
 
 /* -----kurv i navbar----- */
 #kurv {
-    display: block;
+    display:block;
     float: right;
+    position: relative;
     margin-top: 15px;
-
-
 
 }
 
-
 #main-toggle {
-    cursor: pointer;
     float: right;
     padding: 28px 20px;
     position: relative;
@@ -108,7 +106,8 @@ nav {
 
 nav:after {
     content: "";
-    display: table;
+    display:table;
+    background-color: none;
     clear: both;
 }
 
@@ -138,16 +137,19 @@ nav a {
 
 nav ul li ul li:hover {
     background: #d68e97;
+     border: solid 1px;
 }
 
 nav a:hover {
-    background-color: mistyrose;
+    background-color: bisque;
+    
 }
 
 nav ul ul {
     display: none;
-    position: absolute;
+    position:sticky;
     top: 60px;
+   
 }
 
 nav ul li:hover > ul {
