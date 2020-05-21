@@ -125,6 +125,7 @@
      margin: 0;
      padding: 0;
      background-color: none;
+     font-family: MADE SAONARA;
 
  }
 
@@ -155,6 +156,8 @@
      margin: 0;
      padding: 0;
      background-color: #d68e97;
+     
+     
 
  }
 
@@ -231,6 +234,7 @@
      font-size: 20px;
      line-height: 60px;
      text-decoration: none;
+     font-family: MADE SAONARA;;
 
 
  }
@@ -245,6 +249,7 @@
  nav a:hover {
      background-color: mistyrose;
      border: solid 1px bisque;
+     text-decoration: underline;
 
 
  }
@@ -273,6 +278,7 @@
 
  nav ul li:hover > ul {
      display: inherit;
+     
 
 
  }
@@ -802,8 +808,10 @@ label, input, textarea {
     border-radius: 1px;
   background-color: whitesmoke;
   padding: 30px;
-    margin: 10px;
-    max-width: 400px;  
+    margin:auto;
+    max-width: 400px;
+   
+
 }
 
 input[type=submit]:hover {
