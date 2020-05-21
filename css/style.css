@@ -29,7 +29,7 @@ a {
     color: white;
 }
 
-/* navbar begynder til desktop */
+/* -----navbar begynder til desktop----- */
 
 .toggle,
 [id^=drop] {
@@ -43,12 +43,15 @@ nav {
 
 }
 
+/* -----logo i navbar----- */
+
 #logo {
     display: block;
     float: left;
 
 }
 
+/* -----kurv i navbar----- */
 #kurv {
     display: block;
     float: right;
@@ -168,11 +171,10 @@ li > a:only-child:after {
     content: '';
 }
 
-/* navbarbar/burger begynder til mobile */
+/* ---------navbarbar/burger begynder til mobile---------*/
 
 
-/* Media Queries
---------------------------------------------- */
+/*-------- Media Queries------- */
 
 @media all and (max-width : 768px) {
 
@@ -268,12 +270,13 @@ li > a:only-child:after {
     }
 }
 
-/* Bannere som forekommer på hver side*/
+/* -----Bannere som forekommer på hver side-----*/
 .bannere {
     width: 100%;
+    opacity: 70%;
 }
 
-/* breakstreg som forekommer for hvert afsnit*/
+/* -----breakstreg som forekommer for hvert afsnit-----*/
 
 hr {
     display: block;
@@ -286,12 +289,21 @@ hr {
     width: 80%;
 }
 
-fee #instafeed {
-    width: 80%;
+/*----- Vores instafeed-----*/
+#instafeed {
+   
     text-align: center;
     justify-content: center;
 
 }
+
+#instaoverskrift {
+    text-align: center;
+    color: #d68e97;
+}
+}
+
+/*----- styling af h2-----*/
 
 h2 {
     color: #d68e97;
@@ -301,9 +313,10 @@ h2 {
 
 
 
-/* Forside content begynder her */
+/*-----Forside content begynder her -----*/
 .forsideoverskrifter {
     text-align: center;
+    color: #d68e97;
 }
 
 #forsidecontentvipper {
@@ -380,13 +393,58 @@ produktbox {
     margin-right: auto;
     font-size: 0.7em;
     color: black;
-    
-    
+
+
 }
 
-.knap > a{
-    color:black!important;
-text-decoration:none;}
+.knap > a {
+    color: black !important;
+    text-decoration: none;
+}
 
 
-#orsidecontentkvalitet {}
+#forsidecontentkvalitet {}
+
+
+/*-----guide begynder her-----*/
+
+.guideoverskrifter {
+    text-align: center;
+    color: #d68e97;
+}
+
+
+
+
+
+
+
+
+
+/*----- om os begynder her-----*/
+
+.omosoverskrifter {
+    text-align: center;
+    color: #d68e97;
+}
+
+
+
+
+
+
+/*----- produkt/vippeside begynder her-----*/
+
+.vipperoverskrifter {
+    text-align: center;
+    color: #d68e97;
+}
+
+
+/*----- kontakt begynder her-----*/
+
+.kontaktoverskrifter {
+    text-align: center;
+    color: #d68e97;
+}
+
