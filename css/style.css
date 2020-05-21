@@ -419,9 +419,6 @@ li > a:only-child:after {
 
 
 
-
-
-
 /* -----Bannere som forekommer på hver side-----*/
 .bannere {
     width: 100%;
@@ -692,13 +689,20 @@ footer {
     color: #d68e97;
 }
 
-p {
+.kontakt-brodtekst {
     font-size: 15px;
     margin: 10px;
     text-align: center;
 }
 
-
+.hrkontakt{
+     display: block;
+    border-top: 1.2px solid #d68e97;
+    text-align: center;
+    width: 80%;
+    padding: 0px;
+    
+}
 
 /*----- kurv begynder her-----*/
 .kurvoverskrifter {
