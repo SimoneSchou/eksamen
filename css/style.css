@@ -175,7 +175,6 @@ li > a:only-child:after {
 
 /* ---------navbarbar/burger begynder til mobile---------*/
 
-
 /*-------- Media Queries------- */
 
 @media all and (max-width : 768px) {
@@ -416,22 +415,12 @@ produktbox {
 }
 
 
-
-
-
-
-
-
-
 /*----- om os begynder her-----*/
 
 .omosoverskrifter {
     text-align: center;
     color: #d68e97;
 }
-
-
-
 
 
 
@@ -448,5 +437,11 @@ produktbox {
 .kontaktoverskrifter {
     text-align: center;
     color: #d68e97;
+}
+
+p {
+    font-size: 15px;
+    margin: 10px;
+    text-align: center;
 }
 
