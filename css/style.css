@@ -1,8 +1,12 @@
- @font-face { font-family: MADE SAONARA; src: url('MADE_SAONARA_PERSONAL_USE.otf'); }
+ @font-face { 
+     font-family: MADE SAONARA; 
+     src: url('MADE_SAONARA_PERSONAL_USE.otf'); 
+}
 
-@font-face { font-family: Quicksand; src: url('Quicksand_Light.otf'); }
-
-/*--------Body begynder her---------*/
+@font-face { 
+    font-family: Quicksand; 
+    src: url('Quicksand_Light.otf'); 
+}
 
 /*--------Body begynder her---------*/
 
@@ -26,11 +30,7 @@ header {
     color: #FFFFFF;
     display: block;
     position: relative;
-<<<<<<< HEAD
     font-family: MADE SAONARA;
-
-=======
->>>>>>> 4138aa4b1cc5a1bf1fdd8a95023439d27af68fd3
 }
 
 
@@ -112,10 +112,7 @@ footer {
 .omosoverskrifter {
     text-align: center;
     color: #d68e97;
-<<<<<<< HEAD
 }
-
-
 
 
 
@@ -133,8 +130,58 @@ footer {
 .kontaktoverskrifter {
     text-align: center;
     color: #d68e97;
-=======
->>>>>>> 4138aa4b1cc5a1bf1fdd8a95023439d27af68fd3
+}
+
+
+}
+
+#footer-links,
+#footer-some,
+#footer-kundecenter,
+#footer-kontakt {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+.someimg {
+    width: 15%;
+}
+
+
+/* ---------footer begynder til mobile---------*/
+
+
+/*-------- footer Media Queries------- */
+
+@media all and (max-width : 768px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #footer-links,
+    #footer-some,
+    #footer-kundecenter,
+    #footer-kontakt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .someimg {
+        width: 30px;
+        padding-bottom: 10px;
+    }
+}
+
+
+/*-----guide begynder her-----*/
+
+.guideoverskrifter {
+    text-align: center;
+    color: #d68e97;
 }
 
 
@@ -142,8 +189,17 @@ footer {
 
 
 
-<<<<<<< HEAD
-=======
+
+
+
+/*----- om os begynder her-----*/
+
+.omosoverskrifter {
+    text-align: center;
+    color: #d68e97;
+}
+
+
 /*----- produkt/vippeside begynder her-----*/
 
 .vipperoverskrifter {
@@ -159,12 +215,6 @@ footer {
     color: #d68e97;
 }
 
-
-
-
-
-
->>>>>>> 4138aa4b1cc5a1bf1fdd8a95023439d27af68fd3
 
 
 a {
@@ -347,11 +397,11 @@ li > a:only-child:after {
     content: '';
 }
 
-<<<<<<< HEAD
+
 /* ---------navbarbar/burger begynder til mobile-------*/
 =======
 /* ---------navbarbar/burger begynder til mobile---------*/
->>>>>>> 4138aa4b1cc5a1bf1fdd8a95023439d27af68fd3
+
 
 /*-------- Media Queries------- */
 
