@@ -403,8 +403,6 @@ hr {
     padding: 0;
     text-align: center;
     width: 60%;
-
-
 }
 
 
@@ -514,7 +512,6 @@ produktbox {
 }
 
 .knap {
-
     width: 150px;
     border: 1px solid #d68e97;
     padding: 15px;
@@ -525,8 +522,6 @@ produktbox {
     margin-right: auto;
     font-size: 0.7em;
     color: black;
-
-
 }
 
 .knap > a {
@@ -534,36 +529,52 @@ produktbox {
     text-decoration: none;
 }
 
-
-#forsidecontentkvalitet {
-
-    display: block;
-    width: auto;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-
-}
-
 #kvalitetsvipperboks {
-    width: 80%;
-    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 40px;
     background-color: mistyrose;
-    border-style: solid;
-    border-width: 1px;
-    border-color: mistyrose;
-
 }
 
 #kvalibillede {
-    display: inline-block;
     margin: auto;
-    width: 100%;
+    width: 30%;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
+#kvalitext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 30%;
+    padding-left: 10px;
+    padding-bottom: 10%;
+    padding-top: 10%;
+}
 
+/* ---------section med kvalitetsvipper begynder til mobile---------*/
+/*-------- Media Queries------- */
+
+@media all and (max-width : 768px) {
+    
+    #kvalibillede {
+        margin: auto;
+        width: 40%;
+    }
+    
+    #kvalitext {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 1%;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+}
 
 
 /*--------footer begynder her---------*/
