@@ -18,6 +18,16 @@ body {
     padding: 0;
     word-wrap: break-word;
     color: #D68E97;
+    
+}
+
+a {
+    color: white;
+}
+
+p {
+    margin: 0;
+    font-family: quicksand;
 }
 
 /*--------Header begynder her---------*/
@@ -92,49 +102,6 @@ footer {
 }
 
 
-/*-----guide begynder her-----*/
-
-.guideoverskrifter {
-    text-align: center;
-    color: #d68e97;
-}
-
-
-
-
-
-
-
-
-
-/*----- om os begynder her-----*/
-
-.omosoverskrifter {
-    text-align: center;
-    color: #d68e97;
-}
-
-
-
-
-/*----- produkt/vippeside begynder her-----*/
-
-.vipperoverskrifter {
-    text-align: center;
-    color: #d68e97;
-}
-
-
-/*----- kontakt begynder her-----*/
-
-.kontaktoverskrifter {
-    text-align: center;
-    color: #d68e97;
-}
-
-
-}
-
 #footer-links,
 #footer-some,
 #footer-kundecenter,
@@ -177,54 +144,6 @@ footer {
 }
 
 
-/*-----guide begynder her-----*/
-
-.guideoverskrifter {
-    text-align: center;
-    color: #d68e97;
-}
-
-
-
-
-
-
-
-
-
-/*----- om os begynder her-----*/
-
-.omosoverskrifter {
-    text-align: center;
-    color: #d68e97;
-}
-
-
-/*----- produkt/vippeside begynder her-----*/
-
-.vipperoverskrifter {
-    text-align: center;
-    color: #d68e97;
-}
-
-
-/*----- kontakt begynder her-----*/
-
-.kontaktoverskrifter {
-    text-align: center;
-    color: #d68e97;
-}
-
-
-
-a {
-    color: white;
-}
-
-p {
-    margin: 0;
-    font-family: quicksand;
-}
 
 /* -----navbar begynder til desktop----- */
 
@@ -398,8 +317,6 @@ li > a:only-child:after {
 }
 
 
-/* ---------navbarbar/burger begynder til mobile-------*/
-=======
 /* ---------navbarbar/burger begynder til mobile---------*/
 
 
@@ -499,6 +416,12 @@ li > a:only-child:after {
     }
 }
 
+
+
+
+
+
+
 /* -----Bannere som forekommer på hver side-----*/
 .bannere {
     width: 100%;
@@ -518,8 +441,8 @@ hr {
     width: 80%;
 
 
-
 }
+
 
 /*----- Vores instafeed-----*/
 #instafeed {
@@ -677,7 +600,7 @@ produktbox {
 }
 
 
-<<<<<<< HEAD=======
+
 
 /*--------footer begynder her---------*/
 footer {
@@ -733,6 +656,8 @@ footer {
         padding-bottom: 10px;
     }
 }
+
+
 
 
 /*-----guide begynder her-----*/
