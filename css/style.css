@@ -1,5 +1,7 @@
 @import url(https://www.dafont.com/made-saonara.font);
 
+/*--------Body begynder her---------*/
+
 body {
     background: white;
     width: auto;
@@ -10,6 +12,8 @@ body {
     word-wrap: break-word !important;
 
 }
+
+/*--------Header begynder her---------*/
 
 header {
     background-color: #d68e97;
@@ -24,10 +28,104 @@ header {
 
 
 
+/*--------footer begynder her---------*/
 footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    bottom: 0;
     background-color: #d68e97;
+    width: 100%;
+    padding: 0px;
+    padding-bottom: 10px;
     color: white;
+    font-size: 0.9em;
 }
+
+#footer-links, #footer-some, #footer-kundecenter, #footer-kontakt {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.someimg {
+    width: 15%;
+}
+
+
+/* ---------footer begynder til mobile---------*/
+
+
+/*-------- footer Media Queries------- */
+
+@media all and (max-width : 768px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #footer-links, #footer-some, #footer-kundecenter, #footer-kontakt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .someimg {
+        width: 30px;
+        padding-bottom: 10px;   
+    }
+}
+
+
+/*-----guide begynder her-----*/
+
+.guideoverskrifter {
+    text-align: center;
+    color: #d68e97;
+}
+
+
+
+
+
+
+
+
+
+/*----- om os begynder her-----*/
+
+.omosoverskrifter {
+    text-align: center;
+    color: #d68e97;
+}
+
+
+
+
+
+
+/*----- produkt/vippeside begynder her-----*/
+
+.vipperoverskrifter {
+    text-align: center;
+    color: #d68e97;
+}
+
+
+/*----- kontakt begynder her-----*/
+
+.kontaktoverskrifter {
+    text-align: center;
+    color: #d68e97;
+}
+
+
+
+
+
+
+
 
 a {
     color: white;
@@ -486,94 +584,3 @@ produktbox {
 }
 
 
-/*--------footer begynder her---------*/
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-around;
-    bottom: 0;
-    background-color: #d68e97;
-    width: 100%;
-    padding: 0px;
-    padding-bottom: 10px;
-    color: white;
-    font-size: 0.9em;
-}
-
-#footer-links, #footer-some, #footer-kundecenter, #footer-kontakt {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.someimg {
-    width: 15%;
-}
-
-
-/* ---------footer begynder til mobile---------*/
-
-
-/*-------- Media Queries------- */
-
-@media all and (max-width : 768px) {
-    footer {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    #footer-links, #footer-some, #footer-kundecenter, #footer-kontakt {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .someimg {
-        width: 30px;
-        padding-bottom: 10px;   
-    }
-}
-
-
-/*-----guide begynder her-----*/
-
-.guideoverskrifter {
-    text-align: center;
-    color: #d68e97;
-}
-
-
-
-
-
-
-
-
-
-/*----- om os begynder her-----*/
-
-.omosoverskrifter {
-    text-align: center;
-    color: #d68e97;
-}
-
-
-
-
-
-
-/*----- produkt/vippeside begynder her-----*/
-
-.vipperoverskrifter {
-    text-align: center;
-    color: #d68e97;
-}
-
-
-/*----- kontakt begynder her-----*/
-
-.kontaktoverskrifter {
-    text-align: center;
-    color: #d68e97;
-}
