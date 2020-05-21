@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=roboto);
+@import url(https://www.dafont.com/made-saonara.font);
 
 body {
     background: white;
@@ -40,7 +40,7 @@ nav {
     margin: 0;
     padding: 0;
     background-color: #d68e97;
-    
+
 }
 
 #logo {
@@ -49,13 +49,13 @@ nav {
 
 }
 
- #kurv{
+#kurv {
     display: block;
     float: right;
     margin-top: 15px;
 
-   
-    
+
+
 }
 
 
@@ -65,8 +65,8 @@ nav {
     padding: 28px 20px;
     position: relative;
     user-select: none;
-    
-    
+
+
 }
 
 .nav-icon {
@@ -77,7 +77,7 @@ nav {
     position: relative;
     width: 25px;
 
-    
+
 }
 
 .nav-icon:before,
@@ -178,7 +178,7 @@ li > a:only-child:after {
 
     nav {
         margin: 0;
-        
+
     }
 
     nav ul {
@@ -188,7 +188,7 @@ li > a:only-child:after {
     .toggle + a,
     .menu {
         display: none;
-       
+
     }
 
     .toggle {
@@ -206,12 +206,11 @@ li > a:only-child:after {
     .toggle:hover {
         background-color: #d68e97;
         text-align: center;
-        
+
     }
 
     [id^=drop]:checked + ul {
         display: block
-          
     }
 
     nav ul li {
@@ -230,7 +229,7 @@ li > a:only-child:after {
     nav ul ul ul a {
         padding: 0 80px;
         text-align: center;
-        
+
     }
 
     nav ul ul ul a {
@@ -287,7 +286,107 @@ hr {
     width: 80%;
 }
 
-h2{
-    color: #d68e97;
+fee #instafeed {
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+
 }
 
+h2 {
+    color: #d68e97;
+    font-family: 'Made-Saonara';
+}
+
+
+
+
+/* Forside content begynder her */
+.forsideoverskrifter {
+    text-align: center;
+}
+
+#forsidecontentvipper {
+    display: block;
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+
+.vipper1forside {
+    width: auto;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+.vipper2forside {
+    width: auto;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+
+
+.vippeudpluk {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.vippefremvisning {
+    background-color: #d68e97;
+    color: white;
+    text-align: center;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+produktbox {
+    background-color: #d68e97;
+    color: white;
+    text-align: center;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.produktimg {
+    width: 130px;
+    opacity: 0.75;
+}
+
+.knap {
+
+    width: 150px;
+    border: 1px solid #d68e97;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.7em;
+    color: black;
+    
+    
+}
+
+.knap > a{
+    color:black!important;
+text-decoration:none;}
+
+
+#orsidecontentkvalitet {}
