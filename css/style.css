@@ -1,326 +1,376 @@
+@import url(https://www.dafont.com/made-saonara.font);
+
 body {
-	font: 12px/18px Arial, sans-serif;
-	width: 100%;
-	height: 100%;
-}
-.wrapper {
-	width: 1000px;
-	margin: 0 auto;
-	min-height: 100%;
-	height: auto !important;
-	height: 100%;
+    background: white;
+    width: 100%;
+    font-size: 22px;
+    line-height: 32px;
+    color: black;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word !important;
+
 }
 
-
-/* Header
------------------------------------------------------------------------------*/
-
-header{
-    background: #d68e97;
-    line-height: 3px;
-    color: #fff;
-    margin: ;
-    padding: 10px;
-    word-break: break-word !important;
+header {
+    background-color: #d68e97;
+    width: auto;
+    height: auto;
+    color: white;
 }
+
 
 footer {
-    position: absolute;
-    margin-bottom: 0%;
     background-color: #d68e97;
-    width: 100%;
-    padding: 0px;
     color: white;
-    font-size: 0.9em;
 }
 
-
-a{
-   color: #fff;
-}
-.toggle, [id] {
-display: none;
+a {
+    color: white;
 }
 
+/* -----navbar begynder til desktop----- */
 
-/*https://www.youtube.com/watch?v=IYTBAQRBsw0*/
-
-.cool-link::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #fff;
-    transition: width .3s;
-}
-
-.cool-link:hover::after{
-    width: 100%;
-    transition: width .3s;
-}
-
-#logo{
-    display: block;
-    padding: 0px;
-    float: left;
-    line-height: 10px;
-    margin-right: 30px;
-    margin-left: 30px;
-    
-}
-
-/*farve på hover navigationsmenuen */
- #kurv{
-    display: block;
-    padding: 0px;
-    float: right;
-    line-height: 10px;
-    margin-top: 15px;  
-    
-}
-
-
-
-/*farve på hover navigationsmenuen*/
-nav ul li ul li:hover{
-    background-color: bisque;
-}
-
-/*får linksne til at forsvinde navigationsmenuen*/
-nav ul ul{
+.toggle,
+[id^=drop] {
     display: none;
-    position: absolute;
-    top: 50px;
 }
 
-nav ul ul li{
-    width: 125px;
-    float: none;
-    display: list-item;
-    position: relative;
-    text-align: center;
-    margin: 0.8px;
+nav {
+    margin: 0;
+    padding: 0;
+    background-color: #d68e97;
+
 }
 
-nav ul ul ul li{
-    position: relative;
-    top: -71px;
-    left: 105px;
+/* -----logo i navbar----- */
+
+#logo {
+    display: block;
+    float: left;
+
 }
 
-nav ul li:hover>ul{
-    display: inherit;
+/* -----kurv i navbar----- */
+#kurv {
+    display: block;
+    float: right;
+    margin-top: 15px;
+
 }
 
-
-/*---------------------------------burgermenuen responsiv*/
 #main-toggle {
     cursor: pointer;
     float: right;
-    padding: 28px 28px;
+    padding: 28px 20px;
     position: relative;
     user-select: none;
+
+
 }
 
 .nav-icon {
-    background: white;
+    background-color: white;
+    color: white;
     display: block;
-    height: 3px;
-    width: 30px;
+    height: 4px;
     position: relative;
+    width: 25px;
+
+
 }
 
 .nav-icon:before,
-.nav-icon:after{
+.nav-icon:after {
     background: white;
-    content: " ";
+    content: '';
     display: block;
     height: 100%;
-    width: 100%;
     position: absolute;
+    width: 100%;
+    ;
 }
 
-/* tykkelsen på burgermenu stregerne*/
-
-.nav-icon:before{
-    top:10px;
+.nav-icon:before {
+    top: 10px;
 }
 
-.nav-icon:after{
-    top:-10px;
+.nav-icon:after {
+    top: -10px;
 }
 
-nav:after{
+nav:after {
     content: "";
     display: table;
     clear: both;
 }
-/* slut-----------------------------*/
 
-nav ul{
-    padding: 20px;
-    margin: 0px;
+nav ul {
+    float: left;
+    padding: 0;
+    margin: 0;
     list-style: none;
-    font-family: ------------
+    position: relative;
 }
 
-nav ul li{
-    margin-left: 40px;
+nav ul li {
+    margin: 0px;
+    display: inline-block;
     float: left;
     background-color: #d68e97;
-    display: inline-block;
 }
 
-nav a{
+nav a {
     display: block;
     padding: 0 20px;
     color: white;
+    font-size: 20px;
+    line-height: 60px;
     text-decoration: none;
-    font-size: 15px;
-    line-height: 30px;
 }
 
-/*-- burgerbar i mobil---------------------------*/
- @media all and (max-width:810px){
+nav ul li ul li:hover {
+    background: #d68e97;
+}
+
+nav a:hover {
+    background-color: mistyrose;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+}
+
+nav ul li:hover > ul {
+    display: inherit;
+}
+
+nav ul ul li {
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 170px;
+}
+
+li > a:after {
+    content: ' ';
+}
+
+li > a:only-child:after {
+    content: '';
+}
+
+/* ---------navbarbar/burger begynder til mobile---------*/
+
+
+/*-------- Media Queries------- */
+
+@media all and (max-width : 768px) {
+
     nav {
         margin: 0;
+
     }
-    
-    nav ul{
+
+    nav ul {
         float: none;
     }
-    
-    .toggle+a,
-    .menu{
+
+    .toggle + a,
+    .menu {
         display: none;
+
     }
-    
-    .toggle{
+
+    .toggle {
         display: block;
         background-color: #d68e97;
         padding: 0 20px;
-        font-size: 15px;
-        line-height: 30px;
+        color: white;
+        font-size: 20px;
+        line-height: 60px;
         text-decoration: none;
         border: none;
+        text-align: center;
     }
-    
-    [id^=drop]:checked+ul{
-      display: block;
+
+    .toggle:hover {
+        background-color: #d68e97;
+        text-align: center;
+
     }
-    nav ul li{
+
+    [id^=drop]:checked + ul {
+        display: block
+    }
+
+    nav ul li {
         display: block;
         width: 100%;
         text-align: center;
-        margin: 0;
+
     }
+
     nav ul ul .toggle,
-    nav ul ul a{
-        padding: 0 30px;
+    nav ul ul a {
+        padding: 0 40px;
+        text-align: center;
     }
-    nav ul ul ul a{
+
+    nav ul ul ul a {
         padding: 0 80px;
-        background-color: mistyrose;
+        text-align: center;
+
     }
-    
-    
-    nav ul ul{
+
+    nav ul ul ul a {
+        background-color: #d68e97;
+        text-align: center;
+    }
+
+    nav ul li ul li .toggle,
+    nav ul ul a {
+        background-color: #d68e97;
+        text-align: center;
+    }
+
+    nav ul ul {
         float: none;
         position: static;
-        color:white;
+        color: white;
+        text-align: center;
+
     }
-    
-     nav ul ul li:hover>ul,
-    nav ul li:hover>ul{
+
+    nav ul ul li:hover > ul,
+    nav ul li:hover > ul {
         display: none;
     }
-    nav ul ul li{
+
+    nav ul ul li {
         display: block;
         width: 100%;
+        text-align: center;
     }
-    nav ul ul ul li{
+
+    nav ul ul ul li {
         position: static;
+
     }
-   
-    
-    .kontaktlink{
-        margin: 0;
-    }
-    
-    #logo{
-    margin: 0;
-    width: 100px;   
-    }     
 }
 
-kontaktlink{
-    float: right;
-    margin-right: 40px
+/* -----Bannere som forekommer på hver side-----*/
+.bannere {
+    width: 100%;
+    opacity: 70%;
 }
 
-
-/* content!!
------------------------------------------------------------------------------*/
-
-
-.h2overskrift-vipper {
-    text-align: center;
-    color: #d68e97;
-    font-size: 20px;
-    line-height: 90px;
-}
-
-h2{
-     text-align: center;
-    color: #d68e97;
-}
-
-/*Dette er vores break-streg som dukker op flere gange undervejs i vores side*/
-
-
+/* -----breakstreg som forekommer for hvert afsnit-----*/
 
 hr {
-    display: block; 
-    height: 1.5px;
-    border: 0; 
+    display: block;
+    height: 2px;
+    border: 0;
     border-top: 1px solid #d68e97;
-    margin: auto; 
+    margin: auto;
     padding: 0;
     text-align: center;
     width: 80%;
-    
-} 
-
-
-/* her er forsiden*/
-
-
-.bannere{
-    width: 100%;
 }
 
-/* Her starter vores første section som kommer under landing siden*/
-.vippefremvisning {
+/*----- Vores instafeed-----*/
+#instafeed {
+   
+    text-align: center;
+    justify-content: center;
+
+}
+
+#instaoverskrift {
+    text-align: center;
+    color: #d68e97;
+}
+}
+
+/*----- styling af h2-----*/
+
+h2 {
+    color: #d68e97;
+    font-family: 'Made-Saonara';
+}
+
+
+
+
+/*-----Forside content begynder her -----*/
+.forsideoverskrifter {
+    text-align: center;
+    color: #d68e97;
+}
+
+#forsidecontentvipper {
+    display: block;
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+
+.vipper1forside {
+    width: auto;
+    padding: 10px;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     align-content: center;
-    
+    text-align: center;
 }
 
+.vipper2forside {
+    width: auto;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+
+
 .vippeudpluk {
+    width: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-
-/*Dette er vores produktbox som går igen på flere af vores undersider*/
-.vippebillede1, .vippebillede2, .vippebillede3, .vippebillede4 {
+.vippefremvisning {
     background-color: #d68e97;
-    color: white; 
+    color: white;
     text-align: center;
-    padding: 5px;
-    margin: 5px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+produktbox {
+    background-color: #d68e97;
+    color: white;
+    text-align: center;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 .produktimg {
@@ -328,94 +378,70 @@ hr {
     opacity: 0.75;
 }
 
-/*Denne bruges til samtlige knapper hele vejen igennem siden*/
 .knap {
-    padding: 10px;
-    border: 1px;
-    border-color: #d68e97;
-    border-style: solid;
+
+    width: 150px;
+    border: 1px solid #d68e97;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    font-size: 0.7em;
+    color: black;
+
+
+}
+
+.knap > a {
+    color: black !important;
+    text-decoration: none;
 }
 
 
-/*Her starter vores 2. section. Det er en lille section med et billede og lidt tekst*/
-#kvalibillede {
-    width: 30%;
-    height: 30%;
-}
-
-.flexcontainer-forside {
-   display: flex;
-    justify-content: center;
-    font-size: 0.9em; 
-}
-
-#kvalitetsvipper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.9em;
-    line-height: 20px;
-}
-
-#kvalitext {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-/*_________________________________________________*/
+#forsidecontentkvalitet {}
 
 
+/*-----guide begynder her-----*/
 
-
-
-/*Kode om os */
-
-.omimg {
-    width: 50%;
-    height: auto;
-}
-
-#om1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    font-size: 0.9em;
-    width: 100%;  
-}
-
-
-#om2 {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: flex-start;
-    font-size: 0.9em;
-    width: 100%;
-}
-
-.omp {
-    width: 290px;
-}
-
-/*-- KONTAKTSIDE---------------------------*/
-
-.kontakt-overskrift {
+.guideoverskrifter {
     text-align: center;
     color: #d68e97;
-    font-size: 30px;
-    margin: 30px;
-    font-family:----------------;
-    line-height: 30px;
 }
 
-.p-brodtekst-kontakt{
-margin: 15px;
-line-height: 20px;
-text-align: center;   
+
+
+
+
+
+
+
+
+/*----- om os begynder her-----*/
+
+.omosoverskrifter {
+    text-align: center;
+    color: #d68e97;
 }
 
+
+
+
+
+
+/*----- produkt/vippeside begynder her-----*/
+
+.vipperoverskrifter {
+    text-align: center;
+    color: #d68e97;
+}
+
+
+/*----- kontakt begynder her-----*/
+
+.kontaktoverskrifter {
+    text-align: center;
+    color: #d68e97;
+}
 
