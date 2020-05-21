@@ -1,756 +1,771 @@
- @font-face { 
-     font-family: MADE SAONARA; 
-     src: url('MADE_SAONARA_PERSONAL_USE.otf'); 
-}
-
-@font-face { 
-    font-family: Quicksand; 
-    src: url('Quicksand_Light.otf'); 
-}
-
-/*--------Body begynder her---------*/
-
-body {
-    width: auto;
-    height: auto;
-    color: black;
-    margin: 0;
-    padding: 0;
-    word-wrap: break-word;
-    color: #D68E97;
-    
-}
-
-a {
-    color: white;
-}
-
-p {
-    margin: 0;
-    font-family: quicksand;
-}
-
-/*--------Header begynder her---------*/
-
-header {
-
-    background-color: #d68e97;
-    width: auto;
-    height: auto;
-    color: #FFFFFF;
-    display: block;
-    position: relative;
-    font-family: MADE SAONARA;
-}
-
-
-
-/*--------footer begynder her---------*/
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-around;
-    bottom: 0;
-    background-color: #d68e97;
-    width: 100%;
-    padding: 0px;
-    padding-bottom: 10px;
-    color: white;
-    font-size: 0.9em;
-}
-
-#footer-links,
-#footer-some,
-#footer-kundecenter,
-#footer-kontakt {
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: center;
-}
-
-.someimg {
-    width: 15%;
-}
-
-
-/* ---------footer begynder til mobile---------*/
-
-
-/*-------- footer Media Queries------- */
-
-@media all and (max-width : 768px) {
-    footer {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    #footer-links,
-    #footer-some,
-    #footer-kundecenter,
-    #footer-kontakt {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .someimg {
-        width: 30px;
-        padding-bottom: 10px;
-    }
-}
-
-
-#footer-links,
-#footer-some,
-#footer-kundecenter,
-#footer-kontakt {
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: center;
-}
-
-
-/* -----navbar begynder til desktop----- */
-
-.toggle,
-[id^=drop] {
-    display: none;
-
-}
-
-nav {
-    margin: 0;
-    padding: 0;
-    background-color: none;
-
-}
-
-/* -----logo i navbar----- */
-
-#logo {
-    display: block;
-    float: left;
-
-}
-
-/* -----kurv i navbar----- */
-#kurv {
-    display: block;
-    float: right;
-    position: relative;
-    margin-top: 15px;
-
-}
-
-.toggle,
-[id^=drop] {
-    display: none;
-}
-
-nav {
-    margin: 0;
-    padding: 0;
-    background-color: #d68e97;
-
-}
-
-#logo {
-    position: relative;
-    display: block;
-    float: left;
-
-}
-
-
-#main-toggle {
-    cursor: pointer;
-    float: right;
-    padding: 28px 20px;
-    position: relative;
-    user-select: none;
-
-}
-
-.nav-icon {
-    background: white;
-    display: block;
-    height: 2px;
-    position: relative;
-    width: 18px;
-}
-
-.nav-icon:before,
-.nav-icon:after {
-    background: white;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    width: 100%;
-}
-
-.nav-icon:before {
-    top: 5px;
-}
-
-.nav-icon:after {
-    top: -5px;
-}
-
-nav:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-nav ul {
-    float: left;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    position: relative;
-}
-
-nav ul li {
-    margin: 0px;
-    display: inline-block;
-    float: left;
-    background-color: #d68e97;
-
-
-}
-
-nav a {
-    display: block;
-    padding: 0 20px;
-    color: #FFF;
-    font-size: 20px;
-    line-height: 60px;
-    text-decoration: none;
-
-
-}
-
-nav ul li ul li:hover {
-    background: #d68e97;
-    border: solid 1px bisque;
-
-
-}
-
-nav a:hover {
-    background-color: mistyrose;
-
-
-}
-
-nav ul ul {
-    display: none;
-    position: sticky;
-    top: 60px;
-
-
-}
-
-nav ul li:hover > ul {
-    display: inherit;
-
-
-}
-
-nav ul ul li {
-    width: 170px;
-    float: none;
-    display: list-item;
-    position: relative;
-
-}
-
-nav ul ul ul li {
-    position: relative;
-    top: -60px;
-    left: 170px;
-
-}
-
-li > a:after {
-    content: ' ';
-}
-
-li > a:only-child:after {
-    content: '';
-}
-
-
-/* ---------navbarbar/burger begynder til mobile---------*/
-
-
-/*-------- Media Queries------- */
-
-@media all and (max-width : 768px) {
-
-    nav {
-        margin: 0;
-
-    }
-
-    nav ul {
-        float: none;
-    }
-
-    .toggle + a,
-    .menu {
-        display: none;
-
-    }
-
-    .toggle {
-        display: block;
-        background-color: #d68e97;
-        padding: 0 20px;
-        color: white;
-        font-size: 20px;
-        line-height: 60px;
-        text-decoration: none;
-        border: none;
-        text-align: center;
-    }
-
-    .toggle:hover {
-        background-color: #d68e97;
-
-
-    }
-
-    [id^=drop]:checked + ul {
-        display: block
-    }
-
-    nav ul li {
-        display: block;
-        width: 100%;
-        text-align: center;
-
-    }
-
-    nav ul ul .toggle,
-    nav ul ul a {
-        padding: 0 40px;
-        text-align: center;
-    }
-
-    nav ul ul ul a {
-        padding: 0 80px;
-        text-align: center;
-
-    }
-
-    nav ul ul ul a {
-        background-color: #d68e97;
-        text-align: center;
-    }
-
-    nav ul li ul li .toggle,
-    nav ul ul a {
-        background-color: #d68e97;
-        text-align: center;
-    }
-
-    nav ul ul {
-        float: none;
-        position: static;
-        color: white;
-        text-align: center;
-
-    }
-
-    nav ul ul li:hover > ul,
-    nav ul li:hover > ul {
-        display: none;
-    }
-
-    nav ul ul li {
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
-
-    nav ul ul ul li {
-        position: static;
-
-    }
-}
-
-
-
-
-/* -----Bannere som forekommer på hver side-----*/
-.bannere {
-    width: 100%;
-    opacity: 70%;
-}
-
-/* -----breakstreg som forekommer for hvert afsnit-----*/
-
-hr {
-    display: block;
-    height: 30px;
-    border: 0;
-    border-top: 1.6px solid #d68e97;
-    margin: 40px auto;
-    padding: 0;
-    text-align: center;
-    width: 60%;
-
-
-}
-
-
-/*----- Vores instafeed-----*/
-#instafeed {
-
-    text-align: center;
-    justify-content: center;
-    width: 80%;
-    margin: auto;
-
-}
-
-#instaoverskrift {
-    text-align: center;
-    color: #d68e97;
-}
-}
-
-/*----- styling af h2 + h3-----*/
-
-h2 {
-    color: #d68e97;
-    font-family: MADE SAONARA;
-}
-
-
-h3 {
-    color: white;
-    font-family: MADE SAONARA;
-}
-
-/*-----Forside content begynder her -----*/
-
-.forsideoverskrifter {
-    text-align: center;
-    color: #d68e97;
-    margin: auto;
-
-}
-
-#forsidecontentvipper {
-    display: block;
-    width: auto;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-
-
-}
-
-
-.vipper1forside {
-    width: auto;
-    padding: auto;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    text-align: center;
-    background-color: mistyrose;
-    border: solid 1px #d68e97;
-}
-
-.vipper2forside {
-    width: auto;
-    padding: auto;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    text-align: center;
-    background-color: mistyrose;
-    border: solid 1px #d68e97;
-}
-
-
-
-.vippeudpluk {
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.vippefremvisning {
-    background-color: #d68e97;
-    color: white;
-    text-align: center;
-    margin-right: 15px;
-    margin-left: 15px;
-}
-
-produktbox {
-    background-color: #d68e97;
-    color: white;
-    text-align: center;
-    margin-right: 15px;
-    margin-left: 15px;
-}
-
-.produktimg {
-    width: 130px;
-    opacity: 0.75;
-}
-
-.knap {
-
-    width: 150px;
-    border: 1px solid #d68e97;
-    padding: 15px;
-    margin: 15px;
-    text-align: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 0.7em;
-    color: black;
-
-
-}
-
-.knap > a {
-    color: black !important;
-    text-decoration: none;
-}
-
-
-#forsidecontentkvalitet {
-
-    display: block;
-    width: auto;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-
-}
-
-#kvalitetsvipperboks {
-    width: 80%;
-    margin-bottom: 30px;
-    background-color: mistyrose;
-    border-style: solid;
-    border-width: 1px;
-    border-color: mistyrose;
-
-}
-
-#kvalibillede {
-    display: inline-block;
-    margin: auto;
-    width: 100%;
-}
-
-
-
-
-/*--------footer begynder her---------*/
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-around;
-    bottom: 0;
-    background-color: #d68e97;
-    width: 100%;
-    padding: 0px;
-    padding-bottom: 10px;
-    color: white;
-    font-size: 0.9em;
-}
-
-#footer-links,
-#footer-some,
-#footer-kundecenter,
-#footer-kontakt {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.someimg {
-    width: 15%;
-}
-
-
-/* ---------footer begynder til mobile---------*/
-
-
-/*-------- Media Queries------- */
-
-@media all and (max-width : 768px) {
-    footer {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    #footer-links,
-    #footer-some,
-    #footer-kundecenter,
-    #footer-kontakt {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .someimg {
-        width: 30px;
-        padding-bottom: 10px;
-    }
-}
-
-
-
-
-/*-----guide begynder her-----*/
-
-.guideoverskrifter {
-    text-align: center;
-    color: #d68e97;
-}
-
-
-/*----- om os begynder her-----*/
-#omosoverskrift {
-    text-align: center;
-    padding: 50px;
-}
-
-.omkarma {
-    margin-left: 20%;
-    margin-right: 20%;
-    padding-bottom: 15px;
-}
-
-.omimg {
-    width: 40%;
-    height: auto;
-}
-
-#om1 {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    font-size: 0.9em;
-    width: 100%;
-}
-
-
-#om2 {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-start;
-    font-size: 0.9em;
-    width: 100%;
-}
-
-.omp1 {
-    width: 50%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: left;
-}
-
-.omp2 {
-    width: 50%;
-    padding-bottom: 20px;
-    text-align: right;
-    
-}
-
-/*-------Mobil version til 'Om Os' begynder her---------*/
-
-/*-------- Media Queries------- */
-
-@media all and (max-width : 768px) {
-    
-    .omkarma {
-        margin: 0;
-    }
-    
-    .omimg {
-        width: 80%;
-    }
-    
- #om1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.9em;
-    width: 100%;
-    
-}
-
-
-#om2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.9em;
-    width: 100%;
-}   
-    
-    .omp2 {
-    text-align: left;
-    
-}
-}
-
-/*----- produkt/vippeside begynder her-----*/
-
-.vipperoverskrifter {
-    text-align: center;
-    color: #d68e97;
-}
-
-
-/*----- kontakt begynder her-----*/
-
-.kontaktoverskrifter {
-    text-align: center;
-    color: #d68e97;
-}
-
-.kontakt-brodtekst {
-    font-size: 15px;
-    margin: 10px;
-    text-align: center;
-}
-
-.hrkontakt{
+ @font-face {
+     font-family: MADE SAONARA;
+     src: url('MADE_SAONARA_PERSONAL_USE.otf');
+ }
+
+ @font-face {
+     font-family: Quicksand;
+     src: url('Quicksand_Light.otf');
+ }
+
+ /*--------Body begynder her---------*/
+
+ body {
+     width: auto;
+     height: auto;
+     color: black;
+     margin: 0;
+     padding: 0;
+     word-wrap: break-word;
+     color: #D68E97;
+
+ }
+
+ a {
+     color: white;
+ }
+
+ p {
+     margin: 0;
+     font-family: quicksand;
+ }
+
+ /*--------Header begynder her---------*/
+
+ header {
+
+     background-color: #d68e97;
+     width: auto;
+     height: auto;
+     color: #FFFFFF;
      display: block;
-    border-top: 1.2px solid #d68e97;
-    text-align: center;
-    width: 80%;
-    padding: 0px;
-    
-}
+     position: relative;
+     font-family: MADE SAONARA;
+ }
 
-/*----- kurv begynder her-----*/
-.kurvoverskrifter {
-    text-align: center;
-    color: #d68e97;
+
+
+ /*--------footer begynder her---------*/
+ footer {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     justify-content: space-around;
+     bottom: 0;
+     background-color: #d68e97;
+     width: 100%;
+     padding: 0px;
+     padding-bottom: 10px;
+     color: white;
+     font-size: 0.9em;
+ }
+
+ #footer-links,
+ #footer-some,
+ #footer-kundecenter,
+ #footer-kontakt {
+     padding-left: 15px;
+     padding-right: 15px;
+     text-align: center;
+ }
+
+ .someimg {
+     width: 15%;
+ }
+
+
+ /* ---------footer begynder til mobile---------*/
+
+
+ /*-------- footer Media Queries------- */
+
+ @media all and (max-width : 768px) {
+     footer {
+         display: flex;
+         flex-direction: column;
+         text-align: center;
+     }
+
+     #footer-links,
+     #footer-some,
+     #footer-kundecenter,
+     #footer-kontakt {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .someimg {
+         width: 30px;
+         padding-bottom: 10px;
+     }
+ }
+
+
+ #footer-links,
+ #footer-some,
+ #footer-kundecenter,
+ #footer-kontakt {
+     padding-left: 15px;
+     padding-right: 15px;
+     text-align: center;
+ }
+
+
+ /* -----navbar begynder til desktop----- */
+
+ .toggle,
+ [id^=drop] {
+     display: none;
+
+ }
+
+ nav {
+     margin: 0;
+     padding: 0;
+     background-color: none;
+
+ }
+
+ /* -----logo i navbar----- */
+
+ #logo {
+     display: block;
+     float: left;
+
+ }
+
+ /* -----kurv i navbar----- */
+ #kurv {
+     display: block;
+     float: right;
+     position: relative;
+     margin-top: 15px;
+
+ }
+
+ .toggle,
+ [id^=drop] {
+     display: none;
+ }
+
+ nav {
+     margin: 0;
+     padding: 0;
+     background-color: #d68e97;
+
+ }
+
+ #logo {
+     position: relative;
+     display: block;
+     float: left;
+
+ }
+
+
+ #main-toggle {
+     cursor: pointer;
+     float: right;
+     padding: 28px 20px;
+     position: relative;
+     user-select: none;
+
+ }
+
+ .nav-icon {
+     background: white;
+     display: block;
+     height: 2px;
+     position: relative;
+     width: 18px;
+ }
+
+ .nav-icon:before,
+ .nav-icon:after {
+     background: white;
+     content: '';
+     display: block;
+     height: 100%;
+     position: absolute;
+     width: 100%;
+ }
+
+ .nav-icon:before {
+     top: 5px;
+ }
+
+ .nav-icon:after {
+     top: -5px;
+ }
+
+ nav:after {
+     content: "";
+     display: table;
+     clear: both;
+ }
+
+ nav ul {
+     float: left;
+     padding: 0;
+     margin: 0;
+     list-style: none;
+     position: relative;
+ }
+
+ nav ul li {
+     margin: 0px;
+     display: inline-block;
+     float: left;
+     background-color: #d68e97;
+
+
+ }
+
+ nav a {
+     display: block;
+     padding: 0 20px;
+     color: #FFF;
+     font-size: 20px;
+     line-height: 60px;
+     text-decoration: none;
+
+
+ }
+
+ nav ul li ul li:hover {
+     background: #d68e97;
+     border: solid 1px bisque;
+
+
+ }
+
+ nav a:hover {
+     background-color: mistyrose;
+
+
+ }
+
+ nav ul ul {
+
+     top: 60px;
+     list-style: none;
+     display: none;
+     position: absolute;
+
+     z-index: 1;
+    
+
+
+
+ }
+
+ nav ul ul ul {
+     top: 60px;
+     list-style: none;
+     display: none;
+     position: absolute;
+     z-index: 1;
+ }
+
+ nav ul li:hover > ul {
+     display: inherit;
+
+
+ }
+
+ nav ul ul li {
+     width: 170px;
+     float: none;
+     display: list-item;
+     position: relative;
+      z-index: 1;
+
+ }
+
+ nav ul ul ul li {
+     position: relative;
+     top: -60px;
+     left: 170px;
+
+ }
+
+ li > a:after {
+     content: ' ';
+ }
+
+ li > a:only-child:after {
+     content: '';
+ }
+
+
+ /* ---------navbarbar/burger begynder til mobile---------*/
+
+
+ /*-------- Media Queries------- */
+
+ @media all and (max-width : 768px) {
+
+     nav {
+         margin: 0;
+
+     }
+
+     nav ul {
+         float: none;
+     }
+
+     .toggle + a,
+     .menu {
+         display: none;
+
+     }
+
+     .toggle {
+         display: block;
+         background-color: #d68e97;
+         padding: 0 20px;
+         color: white;
+         font-size: 20px;
+         line-height: 60px;
+         text-decoration: none;
+         border: none;
+         text-align: center;
+     }
+
+     .toggle:hover {
+         background-color: #d68e97;
+
+
+     }
+
+     [id^=drop]:checked + ul {
+         display: block
+     }
+
+     nav ul li {
+         display: block;
+         width: 100%;
+         text-align: center;
+
+     }
+
+     nav ul ul .toggle,
+     nav ul ul a {
+         padding: 0 40px;
+         text-align: center;
+     }
+
+     nav ul ul ul a {
+         padding: 0 80px;
+         text-align: center;
+
+     }
+
+     nav ul ul ul a {
+         background-color: #d68e97;
+         text-align: center;
+     }
+
+     nav ul li ul li .toggle,
+     nav ul ul a {
+         background-color: #d68e97;
+         text-align: center;
+     }
+
+     nav ul ul {
+         float: none;
+         position: static;
+         color: white;
+         text-align: center;
+
+     }
+
+     nav ul ul li:hover > ul,
+     nav ul li:hover > ul {
+         display: none;
+     }
+
+     nav ul ul li {
+         display: block;
+         width: 100%;
+         text-align: center;
+     }
+
+     nav ul ul ul li {
+         position: static;
+
+     }
+ }
+
+
+
+
+ /* -----Bannere som forekommer på hver side-----*/
+ .bannere {
+     width: 100%;
+     opacity: 70%;
+ }
+
+ /* -----breakstreg som forekommer for hvert afsnit-----*/
+
+ hr {
+     display: block;
+     height: 30px;
+     border: 0;
+     border-top: 1.6px solid #d68e97;
+     margin: 40px auto;
+     padding: 0;
+     text-align: center;
+     width: 60%;
+
+
+ }
+
+
+ /*----- Vores instafeed-----*/
+ #instafeed {
+
+     text-align: center;
+     justify-content: center;
+     width: 80%;
+     margin: auto;
+
+ }
+
+ #instaoverskrift {
+     text-align: center;
+     color: #d68e97;
+ }
+ }
+
+ /*----- styling af h2 + h3-----*/
+
+ h2 {
+     color: #d68e97;
+     font-family: MADE SAONARA;
+ }
+
+
+ h3 {
+     color: white;
+     font-family: MADE SAONARA;
+ }
+
+ /*-----Forside content begynder her -----*/
+
+ .forsideoverskrifter {
+     text-align: center;
+     color: #d68e97;
+     margin: auto;
+
+ }
+
+ #forsidecontentvipper {
+     display: block;
+     width: auto;
+     text-align: center;
+     justify-content: center;
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: row;
+
+
+ }
+
+
+ .vipper1forside {
+     width: auto;
+     padding: auto;
+     margin: auto;
+     display: flex;
+     flex-direction: column;
+     align-content: center;
+     text-align: center;
+     background-color: mistyrose;
+     border: solid 1px #d68e97;
+ }
+
+ .vipper2forside {
+     width: auto;
+     padding: auto;
+     margin: auto;
+     display: flex;
+     flex-direction: column;
+     align-content: center;
+     text-align: center;
+     background-color: mistyrose;
+     border: solid 1px #d68e97;
+ }
+
+
+
+ .vippeudpluk {
+     width: auto;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+ }
+
+ .vippefremvisning {
+     background-color: #d68e97;
+     color: white;
+     text-align: center;
+     margin-right: 15px;
+     margin-left: 15px;
+ }
+
+ produktbox {
+     background-color: #d68e97;
+     color: white;
+     text-align: center;
+     margin-right: 15px;
+     margin-left: 15px;
+ }
+
+ .produktimg {
+     width: 130px;
+     opacity: 0.75;
+ }
+
+ .knap {
+
+     width: 150px;
+     border: 1px solid #d68e97;
+     padding: 15px;
+     margin: 15px;
+     text-align: center;
+     justify-content: center;
+     margin-left: auto;
+     margin-right: auto;
+     font-size: 0.7em;
+     color: black;
+
+
+ }
+
+ .knap > a {
+     color: black !important;
+     text-decoration: none;
+ }
+
+
+ #forsidecontentkvalitet {
+
+     display: block;
+     width: auto;
+     text-align: center;
+     justify-content: center;
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: row;
+
+ }
+
+ #kvalitetsvipperboks {
+     width: 80%;
+     margin-bottom: 30px;
+     background-color: mistyrose;
+     border-style: solid;
+     border-width: 1px;
+     border-color: mistyrose;
+
+ }
+
+ #kvalibillede {
+     display: inline-block;
+     margin: auto;
+     width: 100%;
+ }
+
+
+
+
+ /*--------footer begynder her---------*/
+ footer {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     justify-content: space-around;
+     bottom: 0;
+     background-color: #d68e97;
+     width: 100%;
+     padding: 0px;
+     padding-bottom: 10px;
+     color: white;
+     font-size: 0.9em;
+ }
+
+ #footer-links,
+ #footer-some,
+ #footer-kundecenter,
+ #footer-kontakt {
+     padding-left: 15px;
+     padding-right: 15px;
+ }
+
+ .someimg {
+     width: 15%;
+ }
+
+
+ /* ---------footer begynder til mobile---------*/
+
+
+ /*-------- Media Queries------- */
+
+ @media all and (max-width : 768px) {
+     footer {
+         display: flex;
+         flex-direction: column;
+         text-align: center;
+     }
+
+     #footer-links,
+     #footer-some,
+     #footer-kundecenter,
+     #footer-kontakt {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .someimg {
+         width: 30px;
+         padding-bottom: 10px;
+     }
+ }
+
+
+
+
+ /*-----guide begynder her-----*/
+
+ .guideoverskrifter {
+     text-align: center;
+     color: #d68e97;
+ }
+
+
+ /*----- om os begynder her-----*/
+ #omosoverskrift {
+     text-align: center;
+     padding: 50px;
+ }
+
+ .omkarma {
+     margin-left: 20%;
+     margin-right: 20%;
+     padding-bottom: 15px;
+ }
+
+ .omimg {
+     width: 40%;
+     height: auto;
+ }
+
+ #om1 {
+     display: flex;
+     flex-direction: row;
+     align-items: flex-end;
+     font-size: 0.9em;
+     width: 100%;
+ }
+
+
+ #om2 {
+     display: flex;
+     flex-direction: row-reverse;
+     align-items: flex-start;
+     font-size: 0.9em;
+     width: 100%;
+ }
+
+ .omp1 {
+     width: 50%;
+     padding-top: 20px;
+     padding-bottom: 20px;
+     text-align: left;
+ }
+
+ .omp2 {
+     width: 50%;
+     padding-bottom: 20px;
+     text-align: right;
+
+ }
+
+ /*-------Mobil version til 'Om Os' begynder her---------*/
+
+ /*-------- Media Queries------- */
+
+ @media all and (max-width : 768px) {
+
+     .omkarma {
+         margin: 0;
+     }
+
+     .omimg {
+         width: 80%;
+     }
+
+     #om1 {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         font-size: 0.9em;
+         width: 100%;
+
+     }
+
+
+     #om2 {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         font-size: 0.9em;
+         width: 100%;
+     }
+
+     .omp2 {
+         text-align: left;
+
+     }
+ }
+
+ /*----- produkt/vippeside begynder her-----*/
+
+ .vipperoverskrifter {
+     text-align: center;
+     color: #d68e97;
+ }
+
+
+ /*----- kontakt begynder her-----*/
+
+ .kontaktoverskrifter {
+     text-align: center;
+     color: #d68e97;
+ }
+
+ .kontakt-brodtekst {
+     font-size: 15px;
+     margin: 10px;
+     text-align: center;
+ }
+
+ .hrkontakt {
+     display: block;
+     border-top: 1.2px solid #d68e97;
+     text-align: center;
+     width: 80%;
+     padding: 0px;
+
+ }
+
+ /*----- kurv begynder her-----*/
+ .kurvoverskrifter {
+     text-align: center;
+     color: #d68e97;
