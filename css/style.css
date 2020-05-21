@@ -20,6 +20,7 @@ header {
 }
 
 
+
 footer {
     background-color: #d68e97;
     color: white;
@@ -53,9 +54,11 @@ nav {
 
 /* -----kurv i navbar----- */
 #kurv {
-    display: block;
+    display:block;
     float: right;
+    position: relative;
     margin-top: 15px;
+
 
 
 
@@ -142,7 +145,7 @@ nav a:hover {
 
 nav ul ul {
     display: none;
-    position: absolute;
+    position:sticky;
     top: 60px;
 }
 
