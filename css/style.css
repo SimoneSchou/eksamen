@@ -842,7 +842,7 @@ hr {
 
  .kontakt-brodtekst {
      font-size: 15px;
-     margin: 10px;
+     margin-bottom: 50px;
      text-align: center;
  }
 
@@ -854,12 +854,6 @@ hr {
      padding: 0px;
 
  }
-
-    border-top: 1.2px solid #d68e97;
-    text-align: center;
-    width: 80%;
-    padding: 0px;   
-}
 
 
 /*kontaktform*/
@@ -880,7 +874,7 @@ label, input, textarea {
   padding: 30px;
     margin:auto;
     max-width: 400px;
-   
+    margin-bottom: 20px;
 
 }
 
