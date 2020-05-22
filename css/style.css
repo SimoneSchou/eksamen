@@ -791,7 +791,7 @@ hr {
 
  /*----- produkt/vippeside begynder her-----*/
 
-.vippeoverskriftp {
+.vippetopp {
     text-align: center;
     padding: 20px;
     margin-left: 30%;
@@ -802,7 +802,7 @@ hr {
  /*-------- Media Queries------- */
 
 @media all and (max-width : 768px) {
-    .vippeoverskriftp {
+    .vippetopp {
         margin-top: 15px;
         margin-bottom: 25px;
         margin-left: auto;
@@ -821,7 +821,7 @@ hr {
 
  .kontakt-brodtekst {
      font-size: 15px;
-     margin-bottom: 50px;
+     margin: 10px;
      text-align: center;
  }
 
@@ -833,6 +833,12 @@ hr {
      padding: 0px;
 
  }
+
+    border-top: 1.2px solid #d68e97;
+    text-align: center;
+    width: 80%;
+    padding: 0px;   
+}
 
 
 /*kontaktform*/
@@ -853,7 +859,7 @@ label, input, textarea {
   padding: 30px;
     margin:auto;
     max-width: 400px;
-    margin-bottom: 20px;
+   
 
 }
 
