@@ -857,13 +857,14 @@ input[type=submit]:hover {
   background-color: mistyrose;
 }
 
-input[type=submit] {
+  [type=submit] {
   background-color: #d68e97;
   color: white;
   padding: 5px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+      margin: 10px
 }
 
 input[type=text], select, textarea {
