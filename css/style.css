@@ -446,16 +446,7 @@
  }
  
 
-hr {
-    display: block;
-    height: 30px;
-    border: 0;
-    border-top: 1.6px solid #d68e97;
-    margin: 40px auto;
-    padding: 0;
-    text-align: center;
-    width: 60%;
-}
+
 
  /*----- styling af h2 + h3-----*/
 
@@ -640,8 +631,9 @@ hr {
 #kvalitetsvipperboks {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 80%;
     margin-bottom: 40px;
+    margin: auto;
     background-color: mistyrose;
 }
 
