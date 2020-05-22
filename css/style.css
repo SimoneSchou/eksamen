@@ -467,6 +467,7 @@
      text-align: center;
      color: #d68e97;
      margin: auto;
+     line-height: 100px;
 
  }
 .vipper1side {
@@ -492,7 +493,7 @@
 }
 
 .produktimg {
-    width: 130px;
+    width: 170px;
     opacity: 0.75;
     padding-bottom: 5px;
 }
