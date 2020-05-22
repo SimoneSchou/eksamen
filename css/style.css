@@ -446,16 +446,7 @@
  }
  
 
-hr {
-    display: block;
-    height: 30px;
-    border: 0;
-    border-top: 1.6px solid #d68e97;
-    margin: 40px auto;
-    padding: 0;
-    text-align: center;
-    width: 60%;
-}
+
 
  /*----- styling af h2 + h3-----*/
 
@@ -478,75 +469,41 @@ hr {
      margin: auto;
 
  }
+.vipper1side {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
- #forsidecontentvipper {
-     display: block;
-     width: 93%;
-     margin: auto;
-     text-align: center;
-     justify-content: center;
-     display: flex;
-     flex-wrap: wrap;
-     flex-direction: row;
- }
+.vippeudpluk {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
+.produktbox {
+    background-color: #d68e97;
+    color: white; 
+    text-align: center;
+    margin-right: 35px;
+    margin-left: 35px;
+    margin-bottom: 20%;
+}
 
- .vipper1forside {
-     width: auto;
-     padding: auto;
-     margin: auto;
-     display: flex;
-     flex-direction: column;
-     align-content: center;
-     text-align: center;
-     background-color: mistyrose;
-     border: solid 1px #d68e97;
- }
+.produktimg {
+    width: 130px;
+    opacity: 0.75;
+    padding-bottom: 5px;
+}
 
- .vipper2forside {
-     width: auto;
-     padding: auto;
-     margin: auto;
-     display: flex;
-     flex-direction: column;
-     align-content: center;
-     text-align: center;
-     background-color: mistyrose;
-     border: solid 1px #d68e97;
- }
+.vippep {
+    padding: 4px;
+}
 
 
-
- .vippeudpluk {
-     width: auto;
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
- }
-
- .vippefremvisning {
-     background-color: #d68e97;
-     color: white;
-     text-align: center;
-     margin-right: 15px;
-     margin-left: 15px;
- }
-
- produktbox {
-     background-color: #d68e97;
-     color: white;
-     text-align: center;
-     margin-right: 15px;
-     margin-left: 15px;
- }
-
- .produktimg {
-     width: 130px;
-     opacity: 0.75;
- }
 
  .knap {
-
      width: 150px;
      border: 1px solid #d68e97;
      padding: 15px;
@@ -557,8 +514,6 @@ hr {
      margin-right: auto;
      font-size: 0.7em;
      color: black;
-
-
  }
 
  .knap > a {
@@ -676,8 +631,9 @@ hr {
 #kvalitetsvipperboks {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 80%;
     margin-bottom: 40px;
+    margin: auto;
     background-color: mistyrose;
 }
 
@@ -827,10 +783,25 @@ hr {
 
  /*----- produkt/vippeside begynder her-----*/
 
- .vipperoverskrifter {
-     text-align: center;
-     color: #d68e97;
- }
+.vippeoverskriftp {
+    text-align: center;
+    padding: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+ /*-------Mobil version til 'Vipper' begynder her---------*/
+ /*-------- Media Queries------- */
+
+@media all and (max-width : 768px) {
+    .vippeoverskriftp {
+        margin-top: 15px;
+        margin-bottom: 25px;
+        margin-left: auto;
+        margin-right: auto
+    }
+}
+
 
 
  /*----- kontakt begynder her-----*/
