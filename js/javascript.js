@@ -41,7 +41,7 @@ $(document).ready(function() {
       
       
       
-        if(message.length >=20) {
+        if(message.length >=10) {
          statusElm.append('<div>Besked virker</div>')  
       } else {
           statusElm.append('<div>Der er fejl i beskedfeltet</div>')
