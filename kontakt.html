@@ -9,6 +9,9 @@
     <meta name="keywords" content="">
     <link href='https://www.dafont.com/made-saonara.font' rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/gh/jquery/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="js/javascript.js"></script>
+   
 </head>
 
 <body>
@@ -78,7 +81,6 @@
         </div>
         
         
-        
         <hr class="hrkontakt">
         
         
@@ -104,24 +106,25 @@ meget gerne høre fra dig.</p>
     <form>
        <label>
             Fulde navn
-            <input type="fullname" class="fuldenavn" placeholder="Dit fuldenavn...">
+            <input type="fullname" class="fullname" name="fullname" placeholder="Dit fuldenavn...">
         </label>
         <label>
             E-mail
-            <input type="email" class="email" placeholder="Skriv din mail her...">
+            <input type="email" class="email" name="email" placeholder="Skriv din mail her...">
         </label>
         <label>
             Emne
-            <input type="'text" class="subject" placeholder="Hvad er problemet...">
+            <input type="'text" class="subject" name="subject" placeholder="Hvad er problemet...">
         </label>
         <label>
-            Grund
-            <textarea placeholder="Skriv noget..."></textarea>
-            <label>
-                <input type="submit" value="Submit">
+            Skriv en besked
+            <textarea placeholder="Skriv noget..." name="message" class="message"></textarea>
             </label>
-        </label>
-    </form>
+               <div class="status">
+                   
+               </div>
+        <button type="submit" value="Submit" class="submit">Send</button>
+        </form>
 </div>
    
     <footer>
@@ -155,7 +158,8 @@ meget gerne høre fra dig.</p>
                 </div>
     </footer>
 
-<script src="js/javascript.js"></script>
+
+ 
 </body>
 
 </html>
