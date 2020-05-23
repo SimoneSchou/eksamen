@@ -802,6 +802,101 @@
     }
 }
 
+/*---------Side med konkret produkt begynder her---------*/
+
+.kobsection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.kobimg {
+    width: 30%;
+    padding-right: 20px;
+}
+
+
+.kob2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    
+}
+
+.kobp {
+    width: 50%;
+}
+
+.kobknap {
+    width: 150px;
+    border: 1px solid #d68e97;
+    padding: 15px;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 0.7em;
+    color: black;
+
+}
+
+.kobknap > a {
+    text-decoration: none;
+    color: black;
+    font-family: quicksand;
+}
+
+.flereimgsection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.flereimg {
+    width: 15%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+}
+
+.andre {
+    color: black;
+    text-align: center;
+}
+
+/*--------Mobil version af køb siden------------*/
+ /*-------- Media Queries------- */
+
+@media all and (max-width : 768px) {
+    
+    .kobsection {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .kobimg {
+        width: 100%;
+    }
+    
+    .kobp {
+        width: 400px;
+    }
+    
+    .kob2 {
+        display: flex;
+
+    }
+    
+    .flereimgsection {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .flereimg {
+        width: 100px;
+        padding-top: 10px;
+}
 
 
  /*----- kontakt begynder her-----*/
