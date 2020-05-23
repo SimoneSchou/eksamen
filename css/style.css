@@ -846,13 +846,12 @@
 .flereimgsection {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     align-content: center;
     padding-top: 15px;
 }
 
 .flereimg {
-    width: 15%;
+    width: 80%;
     padding-right: 1%;
     padding-top: 1%;
 }
