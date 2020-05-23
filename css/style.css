@@ -683,6 +683,12 @@
  }
 
 
+#guidevideo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
  /*----- om os begynder her-----*/
  #omosoverskrift {
      text-align: center;
