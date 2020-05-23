@@ -29,6 +29,7 @@
      margin: 0;
      font-family: quicksand;
      color: #383838;
+     line-height: 25px;
  }
 
  /*--------Header begynder her---------*/
@@ -467,6 +468,7 @@
      text-align: center;
      color: #d68e97;
      margin: auto;
+     line-height: 100px;
 
  }
 .vipper1side {
@@ -492,7 +494,7 @@
 }
 
 .produktimg {
-    width: 130px;
+    width: 170px;
     opacity: 0.75;
     padding-bottom: 5px;
 }
@@ -523,7 +525,6 @@
 
 
  #forsidecontentkvalitet {
-
      display: block;
      width: auto;
      text-align: center;
@@ -531,7 +532,6 @@
      display: flex;
      flex-wrap: wrap;
      flex-direction: row;
-
  }
 
  #kvalitetsvipperboks {
@@ -549,8 +549,6 @@
      margin: auto;
      width: 100%;
  }
-
-
 
 
  /*--------footer begynder her---------*/
@@ -901,6 +899,7 @@
 
  /*----- kontakt begynder her-----*/
 
+
  .kontaktoverskrifter {
      text-align: center;
      color: #d68e97;
@@ -920,11 +919,10 @@
      padding: 0px;
 
  }
-
-    border-top: 1.2px solid #d68e97;
+.flexcontainer-kontaktikoner{
     text-align: center;
-    width: 80%;
-    padding: 0px;   
+    margin: 15px;
+    margin-top: 50px;
 }
 
 
@@ -946,7 +944,8 @@ label, input, textarea {
   padding: 30px;
     margin:auto;
     max-width: 400px;
-   
+    margin-bottom: 20px;
+    margin-top: 30px;
 
 }
 
@@ -954,13 +953,14 @@ input[type=submit]:hover {
   background-color: mistyrose;
 }
 
-input[type=submit] {
+  [type=submit] {
   background-color: #d68e97;
   color: white;
   padding: 5px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+      margin: 10px
 }
 
 input[type=text], select, textarea {
@@ -973,6 +973,11 @@ input[type=text], select, textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
+
+/*------kontaktform slut-------*/
+
+
+
 
 
  /*----- kurv begynder her-----*/

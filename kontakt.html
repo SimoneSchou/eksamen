@@ -9,7 +9,9 @@
     <meta name="keywords" content="">
     <link href='https://www.dafont.com/made-saonara.font' rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-
+    <script src="https://cdn.jsdelivr.net/gh/jquery/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="js/javascript.js"></script>
+   
 </head>
 
 <body>
@@ -31,37 +33,39 @@
 
                     <!-- First Tier Drop Down -->
                     <label for="drop-2" class="toggle">Shop </label>
-                    <a href="vipper.html">Shop</a>
+                    <a href="#">Shop</a>
                     <input type="checkbox" id="drop-2">
                     <ul>
 
 
                         <li>
+
                             <!-- Second Tier Drop Down -->
-                            <label for="drop-3" class="toggle">Lashes:</label>
-                            <a href="vipper">Vipper:</a>
+                            <label for="drop-3" class="toggle">Lashes</label>
+                            <a href="vipper.html">Lashes</a>
                             <input type="checkbox" id="drop-3">
                             <ul>
-                                <li><a href="#">Mink</a></li>
+                                <li><a href="index.html">Mink</a></li>
                                 <li><a href="#">Silk</a></li>
                                 <li><a href="#">Usynlig kant</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Fairtrade</a></li>
+                        <li><a href="kurv.html">Vippelim</a></li>
                         <li><a href="#">Accessories</a></li>
                     </ul>
                 </li>
-                <li>
+               
+                <li><a href="omos.html">Guide</a></li>
+                 <li>
                     <!-- First Tier Drop Down -->
-                    <label for="drop-1" class="toggle">Guide </label>
-                    <a href="guide.html">Guide</a>
+                    <label for="drop-1" class="toggle">Om os</label>
+                    <a href="guide.html">Om os</a>
                     <input type="checkbox" id="drop-1">
                     <ul>
-                        <li><a href="guide.html">Vippe guide</a></li>
+                        <li><a href="guide">B2B shop</a></li>
 
                     </ul>
                 </li>
-                <li><a href="omos.html">Om os</a></li>
 
                 <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
@@ -70,11 +74,15 @@
 
     <main>
     
+
+        
          <div class="kontaktoverskrifter">
             <h2>KONTAKT OS</h2>
         </div>
         
+        
         <hr class="hrkontakt">
+        
         
 <p class="kontakt-brodtekst">Har du spørgsmål til produkter eller din ordre er du 
 altid velkommen til at kontakte os. Vi sidder klar og 
@@ -83,32 +91,41 @@ venter på at kunne besvare dit spørgsmål. <br>
 meget gerne høre fra dig.</p>
     </main>
 
-    
+    <div class="flexcontainer-kontaktikoner">
+       
+        <img src="images/kontakt-sp%C3%B8rgsm%C3%A5lstegn.png" width="8%" alt="sporgsmal">
+        
+        <img src="images/convesionsmark.png" width="11%" alt="samtale">
+        
+        <img src="images/checkmark.png" width="10%" alt="checkmark">
+    </div>
     
     <!------ Her er kontaktformen der henviser til javascript------------->
     
     <div class="kontakt-container">
-    <form>
+    
+    <form id="contactform" action="//formspree.io/idse1997@email.com" method="POST">
        <label>
             Fulde navn
-            <input type="fullname" class="fuldenavn" placeholder="Dit fuldenavn...">
+            <input type="fullname" class="fullname" name="fullname" placeholder="Dit fuldenavn...">
         </label>
         <label>
             E-mail
-            <input type="email" class="email" placeholder="Skriv din mail her...">
+            <input type="email" class="email" name="email" placeholder="Skriv din mail her...">
         </label>
         <label>
             Emne
-            <input type="'text" class="subject" placeholder="Hvad er problemet...">
+            <input type="'text" class="subject" name="subject" placeholder="Hvad er problemet...">
         </label>
         <label>
-            Grund
-            <textarea placeholder="Skriv noget..."></textarea>
-            <label>
-                <input type="submit" value="Submit">
+            Skriv en besked
+            <textarea placeholder="Skriv noget..." name="message" class="message"></textarea>
             </label>
-        </label>
-    </form>
+               <div class="status">
+                   
+               </div>
+        <input type="submit" value="Submit" name="_next" class="submit">
+        </form>
 </div>
    
     <footer>
@@ -142,7 +159,8 @@ meget gerne høre fra dig.</p>
                 </div>
     </footer>
 
-<script src="js/javascript.js"></script>
+
+ 
 </body>
 
 </html>
