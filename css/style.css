@@ -23,6 +23,7 @@
 
  a {
      color: white;
+     text-decoration: none;
  }
 
  p {
@@ -731,7 +732,6 @@
  }
 
  /*-------Mobil version til 'Om Os' begynder her---------*/
-
  /*-------- Media Queries------- */
 
  @media all and (max-width : 768px) {
@@ -823,7 +823,7 @@
 }
 
 .kobp {
-    width: 50%;
+    width: 80%;
 }
 
 .kobknap {
@@ -848,11 +848,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
+    padding-top: 15px;
 }
 
 .flereimg {
     width: 15%;
-    padding-left: 1%;
     padding-right: 1%;
     padding-top: 1%;
 }
@@ -882,18 +882,25 @@
     
     .kob2 {
         display: flex;
+        padding-left: 20px;
 
     }
     
     .flereimgsection {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     }
     
     .flereimg {
         width: 100px;
-        padding-top: 10px;
+        padding-top: 15px;
+        padding-right: 10px;
+    }
+    
+    .koboverskrift {
+        width: 200px;
+    }
 }
 
 
