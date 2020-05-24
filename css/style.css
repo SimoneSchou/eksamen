@@ -76,6 +76,13 @@
      width: 15%;
  }
 
+ .footerp {
+     margin: 0;
+     font-family: quicksand;
+     color: white;
+     line-height: 25px;
+ }
+
 
  /* ---------footer begynder til mobile---------*/
 
