@@ -33,10 +33,10 @@ $(document).ready(function() {
       
       
       
-      if(subject.length >=2) {
-         statusElm.append('<div>Emne virker</div>')  
+      if(subject.length >=8) {
+         statusElm.append('<div>Tlf virker</div>')  
       } else {
-          statusElm.append('<div>Der er fejl i emnefeltet</div>')
+          statusElm.append('<div>Der er fejl i tfl feltet</div>')
       }
       
       
