@@ -943,12 +943,14 @@ header {
      text-align: center;
      width: 80%;
      padding: 0px;
-
  }
+
 .flexcontainer-kontaktikoner{
     text-align: center;
     margin: 15px;
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    
 }
 
 
