@@ -820,15 +820,21 @@ header {
 
 /*---------Side med konkret produkt begynder her---------*/
 
+.spaceboks{
+    height: 100px;
+}
+
+
 .kobsection {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 95%;
+    width: 80%;
+    
 }
 
 .kobimg {
-    width: 30%;
+   
     padding-right: 20px;
 }
 

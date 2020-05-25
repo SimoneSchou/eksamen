@@ -54,9 +54,6 @@ $(document).ready(function() {
 
 
 
-
-
-
 /*nu kommer js for kurv*/
 
 const getKurvBtnElement = document.getElementById("getKurv");
