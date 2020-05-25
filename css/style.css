@@ -38,12 +38,13 @@
  header {
 
      background-color: #d68e97;
-     width: auto;
+     width: 100%;
      height: auto;
      color: #FFFFFF;
      display: block;
-     position: relative;
+     position: fixed;
      font-family: MADE SAONARA;
+     z-index: 1;
  }
 
 
