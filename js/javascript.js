@@ -1,13 +1,13 @@
 
 
-/*https://www.youtube.com/watch?v=eg4e-FObyJ8 - video til en kontaktform */
+/* https://www.youtube.com/watch?v=eg4e-FObyJ8 - video til en kontaktform */
 
 
-/* Udskreves i consolen for at se om javascriptet virker*/
+// Udskreves i consolen for at se om javascriptet virker*/
 console.log('Filen virker');
 
 
-/* Her lytter vores javascript på vores knap/input*/
+// Her lytter vores javascript på vores knap/input
 $(document).ready(function() {
   $('.submit').click(function (event){
       event.preventDefault()
@@ -16,13 +16,13 @@ $(document).ready(function() {
 /*event.preventdefault forhindre at der sker en default action med vores knap, så den ikke sender en formular */
       
       
- /*de forskellige values af vores kontaktform*/
+ //de forskellige values af vores kontaktform
       var fullname = $('.fullname').val()
       var email = $('.email').val()
       var subject = $('.subject').val()
       var message = $('.message').val()
       
-      /*udskriver vores user hvad der er galt, samt starter på ny med statusElm.emty*/
+      /*udskriver vores user hvad der er galt, samt starter på ny med statusElm.empty*/
       var statusElm = $('.status')
       statusElm.empty()
       
@@ -31,10 +31,10 @@ $(document).ready(function() {
       if(fullname.length >4) {
          statusElm.append('<div>Fulde navn virker</div>')  
       } else {
-          statusElm.append('<div>Der er fejl i fuldenavn</div>')
+          statusElm.append('<div>Der er fejl i fulde navn</div>')
       }
       
-      /* Der skal være et '@' og '.' i email feltet*/
+      // Der skal være et '@' og '.' i email feltet
       if(email.length > 5 && email.includes('@') && email.includes('.')){
           statusElm.append('<div>Email virker</div>')
           /*append betyder at vi kan tilføje javascript til vores html*/
@@ -43,7 +43,7 @@ $(document).ready(function() {
       }
       
       
-      /* længen skal være under eller i lige med 8 cifre*/
+      // længden skal være mere eller i lige med 8
       if(subject.length >=8) {
          statusElm.append('<div>Tlf virker</div>')  
       } else {
@@ -51,7 +51,7 @@ $(document).ready(function() {
       }
       
       
-      
+    //besked skal være mere eller i lig med 10
         if(message.length >=10) {
          statusElm.append('<div>Besked virker</div>')  
       } else {
@@ -61,14 +61,12 @@ $(document).ready(function() {
       
   })  
 })
+// kontaktform er slut
 
 
 
 
-
-
-
-/*nu kommer js for kurv, samt javascript*/
+/*nu kommer js for kurv*/
 
 const getKurvBtnElement = document.getElementById("getKurv");
 
