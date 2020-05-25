@@ -1011,3 +1011,9 @@ input[type=text], select, textarea {
  .kurvoverskrifter {
      text-align: center;
      color: #d68e97;
+}
+
+.kurvcontainer{
+    justify-content: center;
+}
+     
