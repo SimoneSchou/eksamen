@@ -733,17 +733,13 @@
 
  .omp1 {
      width: 50%;
-     padding-top: 20px;
-     padding-bottom: 20px;
-     padding-left: 15px;
+     padding: 20px;
      text-align: left;
  }
 
  .omp2 {
      width: 50%;
-     padding-top: 20px;
-     padding-bottom: 20px;
-     padding-right: 20px;
+     padding: 20px;
      text-align: right;
 
  }
@@ -782,12 +778,15 @@
      }
     
      .omp1 {
-         width: 500px;
+         width: 70%;
+         padding-top: 30px;
+         padding-bottom: 30px;
      }
 
      .omp2 {
          text-align: left;
-         width: 500px;
+         width: 70%;
+         padding-top: 30px;
      }
 
     .kontakt-brodtekst {
