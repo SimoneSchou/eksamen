@@ -29,7 +29,7 @@ $(document).ready(function() {
       
       /*i disse 4 afsnit af kode vil koden slå ud hvad der er fejl eller rigtigt når man skriver i kontaktformens felter */
       if(fullname.length >4) {
-         statusElm.append('<div>Fuldenavn virker</div>')  
+         statusElm.append('<div>Fulde navn virker</div>')  
       } else {
           statusElm.append('<div>Der er fejl i fuldenavn</div>')
       }
