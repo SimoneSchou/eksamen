@@ -165,11 +165,9 @@ header {
  nav {
      margin: 0;
      padding: 0;
-     background-color: #d68e97;
-     
-     
-
+     background-color: #d68e97; 
  }
+
 
  #logo {
      position: relative;
@@ -423,6 +421,7 @@ header {
  .bannere {
      width: 100%;
      opacity: 70%;
+     padding-top: 55px
  }
 
  /* -----breakstreg som forekommer for hvert afsnit-----*/
@@ -929,6 +928,7 @@ header {
  .kontaktoverskrifter {
      text-align: center;
      color: #d68e97;
+     padding-top: 65px
  }
 
  .kontakt-brodtekst {
