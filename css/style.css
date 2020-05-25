@@ -553,7 +553,6 @@ header {
 
  #kvalibillede {
      display: inline-block;
-    
      
  }
 
@@ -644,7 +643,7 @@ header {
 
 #kvalibillede {
     margin: auto;
-    width: 30%;
+    width: 40%;
     margin-bottom: 0;
     margin-top: 0;
 }
@@ -653,8 +652,8 @@ header {
     display: flex;
     flex-direction: column;
     text-align: left; 
-    margin-right: 30%;
-    padding-left: 10px;
+    margin-right: 10%;
+    padding-left: 50px;
     padding-bottom: 10%;
     padding-top: 10%;
 }
