@@ -35,7 +35,7 @@
 
  /*--------Header begynder her---------*/
 
- header {
+header {
 
      background-color: #d68e97;
      width: 100%;
@@ -175,7 +175,6 @@
      position: relative;
      display: block;
      float: left;
-
  }
 
 
