@@ -46,13 +46,31 @@
                             <a href="vipper.html">Lashes</a>
                             <input type="checkbox" id="drop-3">
                             <ul>
-                                <li><a href="index.html">Mink</a></li>
+                                <li><a href="#">Mink</a></li>
                                 <li><a href="#">Silk</a></li>
                                 <li><a href="#">Usynlig kant</a></li>
                             </ul>
                         </li>
                         <li><a href="vippelim.html">Vippelim</a></li>
-                        <li><a href="#">Accessories</a></li>
+                       
+                        
+                        
+                         <li>
+
+                            <!-- Second Tier Drop Down -->
+                            <label for="drop-3" class="toggle">Accessories</label>
+                            <a href="#">Accessories</a>
+                            <input type="checkbox" id="drop-3">
+                            <ul>
+                                <li><a href="#">Eyemaks</a></li>
+                                <li><a href="#">Serum</a></li>
+                                <li><a href="#">Fairtrade</a></li>
+                                <li><a href="#">Tandblejning</a></li>
+                            </ul>
+                        </li>
+                        
+                         
+                        
                     </ul>
                 </li>
 
@@ -63,7 +81,8 @@
                     <a href="omos.html">Om os</a>
                     <input type="checkbox" id="drop-1">
                     <ul>
-                        <li><a href="guide">B2B shop</a></li>
+                        <li><a href="omos.html">Om Karma</a></li>
+                        <li><a href="#">B2B shop</a></li>
 
                     </ul>
                 </li>
@@ -78,16 +97,18 @@
     <main>
     
            <div class="bannere">
-            <img src="images/kurvbanner.png" alt="forside banner" width="100%">
+            <img src="images/kurvbanner.png" alt="kurv banner" width="100%">
 
         </div>
+        
      <div class="kurvoverskrifter">
             <h2> Her er din kurv:</h2>
         </div>
  
   
-     <hr>
+  
      <br>
+     <div id="selvekurven">
     
    <div class="kurvcontainer">
         
@@ -96,10 +117,13 @@
             
             
             <button id="getKurv" class="btn btn-warning mr-4">Tryk for at se kurv</button>
-            <hr>
+            
             <div id="output"> </div>
+            
         </div>
+    </div>
     
+    <hr>
  
 
     </main>
@@ -134,7 +158,8 @@
             <p class="footerp">Søndag: Lukket</p>
                 </div>
     </footer>
-    <script src="js/javascript.js"></script>  
+    
+    <script src="js/javascriptkurv.js"></script>  
 </body>
 
 </html>
