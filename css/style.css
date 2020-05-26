@@ -1022,5 +1022,7 @@ input[type=text], select, textarea {
 
 .kurvcontainer{
     justify-content: center;
+    text-decoration: none;
+    list-style: none;
 }
      
