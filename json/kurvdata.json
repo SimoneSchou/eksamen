@@ -4,21 +4,21 @@
 		"id": 1,
         "Produkt": "3D mink lashes - Chila",
         "Pris": "189 kr",
-        "path": "images/chilalille.png"
+        "path": "images/chilalille.jpg"
 	},
     
       {
 		"id": 2,
         "Produkt": "Gennemsigtig Vippelim DUO",
         "Pris": "79 kr",
-        "path": "images/duolille.png"
+        "path": "images/duolille.jpg"
 	},
     
      {
 		"id": 3,
         "Produkt": "Vippe påsætter - Guld",
         "Pris": "79 kr",
-        "path": "images/paasaetterlille.png"
+        "path": "images/paasaetterlille1.jpg"
 	}
 	
 	
