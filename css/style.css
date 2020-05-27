@@ -143,8 +143,6 @@
  #logo {
      display: block;
      float: left;
-
-
  }
 
  /* -----kurv i navbar----- */
@@ -172,6 +170,7 @@
      position: relative;
      display: block;
      float: left;
+     margin-top: 0px;
  }
 
 
@@ -929,7 +928,7 @@
  .kontaktoverskrifter {
      text-align: center;
      color: #d68e97;
-     padding-top: 65px
+     padding-top: 95px
  }
 
  .kontakt-brodtekst {
