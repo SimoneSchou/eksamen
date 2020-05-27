@@ -146,12 +146,13 @@
  }
 
  /* -----kurv i navbar----- */
- #kurv {
+ #kurv img{
      display: block;
      float: right;
      position: relative;
      margin-top: 15px;
-     margin-right: 15px
+     margin-right: 15px;
+    width: 38px;
     
  }
 
@@ -415,8 +416,9 @@
 
 
  /* -----Bannere som forekommer på hver side-----*/
- .bannere {
-     width: 100%;
+ .bannere img{
+     max-width: 100%;
+     height: auto;
      opacity: 70%;
      padding-top: 75px;
  }
@@ -549,9 +551,9 @@
 
  }
 
- #kvalibillede {
+ #kvalibillede img {
      display: inline-block;
-
+width: 40%;
  }
 
 
@@ -686,11 +688,16 @@
  }
 
 
- #guidevideo {
+ #guidevideo{
      display: flex;
      justify-content: center;
+     align-content: center;
      text-align: center;
+     
  }
+
+video{
+    width: 80%;}
 
  /*----- om os begynder her-----*/
  #omosoverskrift {
@@ -949,11 +956,24 @@
 
  .flexcontainer-kontaktikoner {
      text-align: center;
-     margin: 15px;
-     margin-top: 30px;
-     margin-bottom: 50px;
+     flex-direction: row;
+     display: flex;
+    justify-content: center;
 
  }
+
+#sporgsmalikon img{
+    width: 80%;
+}
+
+#bobelikon img{
+    width: 80%;
+}
+
+#checkikon img{
+    width: 80%;
+}
+
 
 
  /*kontaktform*/
