@@ -1,10 +1,10 @@
 [
-    /*dette er vores produkter i kurven som bliver føjet til vores json fil, samt dokument*/
+    
     {
 		"id": 1,
         "Produkt": "3D mink lashes - Chila",
         "Pris": "189 kr",
-        "path": "images/chilalille.jpg"
+        "path": "images/chilalille.png"
 	},
     
       {
