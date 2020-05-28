@@ -247,6 +247,7 @@ nav ul li ul li:hover {
 
 nav a:hover {
     background-color: mistyrose;
+    text-decoration: underline;
 }
 
 nav ul ul {
@@ -998,6 +999,7 @@ video{
 
  input[type=submit]:hover {
      background-color: mistyrose;
+     
  }
 
  [type=submit] {
