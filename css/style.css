@@ -177,241 +177,204 @@
  }
 
 
- #main-toggle {
-     cursor: pointer;
-     float: right;
-     padding: 28px 20px;
-     position: relative;
-     user-select: none;
+#main-toggle {
+    cursor: pointer;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
 
- }
+.nav-icon {
+    background: #fff;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
 
- .nav-icon {
-     background: white;
-     display: block;
-     height: 2px;
-     position: relative;
-     width: 18px;
- }
+.nav-icon:before,
+.nav-icon:after {
+    background: #fff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
 
- .nav-icon:before,
- .nav-icon:after {
-     background: white;
-     content: '';
-     display: block;
-     height: 100%;
-     position: absolute;
-     width: 100%;
- }
+.nav-icon:before {
+    top: 5px;
+}
 
- .nav-icon:before {
-     top: 5px;
- }
+.nav-icon:after {
+    top: -5px;
+}
 
- .nav-icon:after {
-     top: -5px;
- }
+nav:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
- nav:after {
-     content: "";
-     display: table;
-     clear: both;
- }
+nav ul {
+    float: left;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
 
- nav ul {
-     float: left;
-     padding: 0;
-     margin: 0;
-     list-style: none;
-     position: relative;
- }
+nav ul li {
+    margin: 0px;
+    display: inline-block;
+    float: left;
+    background-color: #d68e97;
+}
 
- nav ul li {
-     margin: 0px;
-     display: inline-block;
-     float: left;
-     background-color: #d68e97;
+nav a {
+    display: block;
+    padding: 0 20px;
+    color: white;
+    font-size: 20px;
+    line-height: 60px;
+    text-decoration: none;
+}
 
+nav ul li ul li:hover {
+    background: #d68e97;
+}
 
- }
+nav a:hover {
+    background-color: mistyrose;
+}
 
- nav a {
-     display: block;
-     padding: 0 20px;
-     color: #FFF;
-     font-size: 20px;
-     line-height: 60px;
-     text-decoration: none;
-     font-family: MADE SAONARA;
-     ;
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+}
 
+nav ul li:hover > ul {
+    display: inherit;
+}
 
- }
+nav ul ul li {
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
 
- nav ul li ul li:hover {
-     background: #d68e97;
-     border: solid 1px bisque;
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 170px;
+}
 
+li > a:after {
+    content: ' ';
+}
 
- }
-
- nav a:hover {
-     background-color: mistyrose;
-     border: solid 1px bisque;
-     text-decoration: underline;
-
-
- }
-
- nav ul ul {
-
-     top: 60px;
-     list-style: none;
-     display: none;
-     position: absolute;
-     z-index: 1;
-
- }
-
- nav ul ul ul {
-     top: 60px;
-     list-style: none;
-     display: none;
-     position: absolute;
-     z-index: 1;
- }
-
- nav ul li:hover > ul {
-     display: inherit;
-
-
-
- }
-
- nav ul ul li {
-     width: 170px;
-     float: none;
-     display: list-item;
-     position: relative;
-     z-index: 1;
-
- }
-
- nav ul ul ul li {
-     position: relative;
-     top: -60px;
-     left: 170px;
-
- }
-
- li > a:after {
-     content: ' ';
- }
-
- li > a:only-child:after {
-     content: '';
- }
-
+li > a:only-child:after {
+    content: '';
+}
 
  /* ---------navbarbar/burger begynder til mobile---------*/
 
 
  /*-------- Media Queries------- */
 
- @media all and (max-width : 768px) {
 
-     nav {
-         margin: 0;
+@media all and (max-width : 768px) {
 
-     }
+    nav {
+        margin: 0;
+    }
 
-     nav ul {
-         float: none;
-     }
+    nav ul {
+        float: none;
+    }
 
-     .toggle + a,
-     .menu {
-         display: none;
+    .toggle + a,
+    .menu {
+        display: none;
+    }
 
-     }
+    .toggle {
+        display: block;
+        background-color: #d68e97;
+        padding: 0 20px;
+        color: white;
+        font-size: 20px;
+        line-height: 60px;
+        text-decoration: none;
+        border: none;
+        text-align: center;
+    }
 
-     .toggle {
-         display: block;
-         background-color: #d68e97;
-         padding: 0 20px;
-         color: white;
-         font-size: 20px;
-         line-height: 60px;
-         text-decoration: none;
-         border: none;
-         text-align: center;
-     }
+    .toggle:hover {
+        background-color: #d68e97;
+        text-align: center;
+    }
 
-     .toggle:hover {
-         background-color: #d68e97;
+    [id^=drop]:checked + ul {
+        display: block;
+    }
 
+    nav ul li {
+        display: block;
+        width: 100%;
+        text-align: center;
 
-     }
+    }
 
-     [id^=drop]:checked + ul {
-         display: block
-     }
+    nav ul ul .toggle,
+    nav ul ul a {
+        padding: 0 40px;
+        text-align: center;
+    }
 
-     nav ul li {
-         display: block;
-         width: 100%;
-         text-align: center;
+    nav ul ul ul a {
+        padding: 0 80px;
+        text-align: center;
+    }
 
-     }
+    nav ul ul ul a {
+        background-color: #d68e97;
+        text-align: center;
+    }
 
-     nav ul ul .toggle,
-     nav ul ul a {
-         padding: 0 40px;
-         text-align: center;
-     }
+    nav ul li ul li .toggle,
+    nav ul ul a {
+        background-color: #d68e97;
+        text-align: center;
+    }
 
-     nav ul ul ul a {
-         padding: 0 80px;
-         text-align: center;
+    nav ul ul {
+        float: none;
+        position: static;
+        color: white;
+        text-align: center;
 
-     }
+    }
 
-     nav ul ul ul a {
-         background-color: #d68e97;
-         text-align: center;
-     }
+    nav ul ul li:hover > ul,
+    nav ul li:hover > ul {
+        display: none;
+    }
 
-     nav ul li ul li .toggle,
-     nav ul ul a {
-         background-color: #d68e97;
-         text-align: center;
-     }
+    nav ul ul li {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
 
-     nav ul ul {
-         float: none;
-         position: static;
-         color: white;
-         text-align: center;
+    nav ul ul ul li {
+        position: static;
 
-     }
-
-     nav ul ul li:hover > ul,
-     nav ul li:hover > ul {
-         display: none;
-     }
-
-     nav ul ul li {
-         display: block;
-         width: 100%;
-         text-align: center;
-     }
-
-     nav ul ul ul li {
-         position: static;
-
-     }
- }
-
+    }
+}
 
 
 
@@ -822,12 +785,24 @@ video{
      }
  }
 
- /*---------Side med konkret produkt begynder her---------*/
+ /*---------Side med konkret produkt begynder her/karma vippe ---------*/
 
  .spaceboks {
      height: 100px;
  }
 
+#flereimgsection1{
+    display: flex;
+     flex-direction: row;
+     align-content: center;
+     padding-top: 15px;
+}
+
+.sat{
+    display: flex;
+     flex-direction: column;
+   
+}
 
  .kobsection {
      display: flex;
@@ -839,9 +814,11 @@ video{
 
 
 
+
+
  .kobimg {
      padding: 25px;
-      width: 40%;
+      width: 45%;
  }
 
 
@@ -855,6 +832,7 @@ video{
 
  .kobp {
      width: 80%;
+
  }
 
  .kobknap {
@@ -867,6 +845,14 @@ video{
      color: black;
 
  }
+
+#karmavippekob{
+  
+   display: block;
+    width: auto;
+    margin: auto;
+    
+}
 
  .kobknap > a {
      text-decoration: none;
@@ -890,6 +876,10 @@ video{
  .andre {
      color: black;
      text-align: center;
+     display: flex;
+     display: block;
+     
+     
  }
 
  /*--------Mobil version af køb siden------------*/
