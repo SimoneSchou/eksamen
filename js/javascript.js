@@ -1,5 +1,4 @@
 
-
 /* https://www.youtube.com/watch?v=eg4e-FObyJ8 - video til en kontaktform */
 
 
@@ -63,7 +62,5 @@ $(document).ready(function() {
   })  
 }) 
 // kontaktform er slut
-
-
 
 
